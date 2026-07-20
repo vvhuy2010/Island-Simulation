@@ -1,0 +1,341 @@
+===========================================================
+11_RELATIONSHIP
+===========================================================
+
+"We do not know others.
+We only know the version of them that exists in our minds."
+
+(Relationship không phải là sự thật.
+Nó là cách mỗi Agent nhìn nhận và đánh giá một Agent khác
+dựa trên trải nghiệm của chính mình.)
+
+-----------------------------------------------------------
+1. Mục tiêu
+-----------------------------------------------------------
+
+Relationship mô tả cách một Agent cảm nhận và đánh giá
+một Agent khác.
+
+Relationship ảnh hưởng đến:
+
+- Emotion
+- Decision Making
+- Communication
+- Cooperation
+- Conflict
+
+Relationship không quyết định hành động.
+
+Nó chỉ là một trong nhiều yếu tố
+ảnh hưởng đến quá trình suy nghĩ của Agent.
+
+-----------------------------------------------------------
+2. Relationship là dữ liệu một chiều
+-----------------------------------------------------------
+
+Relationship luôn là:
+
+Agent A
+      ↓
+Agent B
+
+không nhất thiết giống
+
+Agent B
+      ↓
+Agent A
+
+Ví dụ:
+
+A rất tin B.
+
+Nhưng
+
+B hoàn toàn không thích A.
+
+Hai Relationship này hoàn toàn độc lập.
+
+-----------------------------------------------------------
+3. Relationship Structure
+-----------------------------------------------------------
+
+Mỗi Relationship gồm hai phần.
+
+Metrics
+
+- Trust
+- Respect
+- Affinity
+- Fear
+- Familiarity
+
+Các chỉ số này giúp Engine
+đánh giá nhanh Relationship.
+
+Beliefs
+
+Là những điều Agent tin về đối tượng.
+
+Ví dụ:
+
+- "B từng cứu mình."
+- "B hay giữ lời."
+- "B rất nóng tính."
+- "B khá hào phóng."
+
+Beliefs giúp LLM hiểu ngữ cảnh
+và tạo hành vi tự nhiên hơn.
+
+-----------------------------------------------------------
+4. Relationship Formation
+-----------------------------------------------------------
+
+Relationship được tạo
+ngay lần đầu Agent gặp nhau.
+
+Ban đầu các Metrics ở trạng thái Neutral.
+
+Ví dụ:
+
+Trust = Neutral
+
+Respect = Neutral
+
+Fear = Neutral
+
+Familiarity = Low
+
+Beliefs:
+
+"Đã gặp lần đầu."
+
+Sau đó Relationship sẽ tiếp tục phát triển
+qua các trải nghiệm.
+
+-----------------------------------------------------------
+5. Relationship Update
+-----------------------------------------------------------
+
+Relationship không tự thay đổi.
+
+Nó thay đổi thông qua trải nghiệm.
+
+Experience
+
+↓
+
+Memory
+
+↓
+
+Relationship
+
+Ví dụ:
+
+B chia thức ăn.
+
+↓
+
+Memory lưu lại.
+
+↓
+
+Belief
+
+"B khá hào phóng."
+
+↓
+
+Trust tăng.
+
+Affinity tăng.
+
+------------------------
+
+B phản bội.
+
+↓
+
+Memory lưu.
+
+↓
+
+Belief
+
+"B không đáng tin."
+
+↓
+
+Trust giảm.
+
+Fear tăng.
+
+-----------------------------------------------------------
+6. Relationship và Memory
+-----------------------------------------------------------
+
+Memory lưu lại sự kiện.
+
+Relationship diễn giải sự kiện.
+
+Ví dụ:
+
+Memory
+
+"B đã cứu mình."
+
+↓
+
+Relationship
+
+"Mình tin B."
+
+Memory là dữ liệu.
+
+Relationship là nhận thức.
+
+-----------------------------------------------------------
+7. Relationship và Emotion
+-----------------------------------------------------------
+
+Relationship ảnh hưởng trực tiếp
+đến Emotion.
+
+Ví dụ:
+
+Bạn thân xuất hiện.
+
+↓
+
+Vui.
+
+------------------------
+
+Kẻ thù xuất hiện.
+
+↓
+
+Lo lắng.
+
+------------------------
+
+Người từng phản bội.
+
+↓
+
+Căng thẳng.
+
+Emotion sau đó sẽ tiếp tục ảnh hưởng
+đến quá trình suy nghĩ.
+
+-----------------------------------------------------------
+8. Relationship và Mind Simulation
+-----------------------------------------------------------
+
+Mind Simulation sử dụng Relationship
+để đánh giá tình huống.
+
+Ví dụ:
+
+Trust cao
+
+↓
+
+Sẵn sàng hợp tác.
+
+------------------------
+
+Fear cao
+
+↓
+
+Muốn tránh mặt.
+
+------------------------
+
+Affinity cao
+
+↓
+
+Muốn giúp đỡ.
+
+Relationship chỉ tạo ảnh hưởng.
+
+Quyết định cuối cùng
+vẫn được đưa ra bởi Mind Simulation.
+
+-----------------------------------------------------------
+9. Design Principles
+-----------------------------------------------------------
+
+Relationship không lưu sự thật.
+
+Relationship lưu cách Agent
+tin rằng sự thật là như thế.
+
+Hai Agent có thể nhìn cùng một sự kiện
+theo hai cách hoàn toàn khác nhau.
+
+Relationship không quyết định hành động.
+
+Nó chỉ góp phần hình thành quyết định.
+
+-----------------------------------------------------------
+Relationship Flow
+-----------------------------------------------------------
+
+Experience
+
+↓
+
+Memory
+
+↓
+
+Beliefs
+
+↓
+
+Relationship Metrics
+
+↓
+
+Emotion
+
+↓
+
+Mind Simulation
+
+↓
+
+Decision
+
+-----------------------------------------------------------
+V2 Ideas
+-----------------------------------------------------------
+
+- Relationship với Place
+
+- Relationship với Animal
+
+- Relationship với Object
+
+- Reputation
+
+- Friendship
+
+- Family
+
+- Love
+
+- Leadership
+
+- Group Relationship
+
+- Cultural Relationship
+
+- Relationship Decay
+
+- First Impression
+
+- Deception & Manipulation

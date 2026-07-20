@@ -1,0 +1,336 @@
+===========================================================
+15_ROADMAP
+===========================================================
+
+"The goal is not to build everything.
+
+The goal is to build a solid foundation
+that can evolve for years."
+
+-----------------------------------------------------------
+Phase 0 — Foundation
+(Status: Completed)
+-----------------------------------------------------------
+
+Objective
+
+Hoàn thiện toàn bộ thiết kế hệ thống
+trước khi bắt đầu lập trình.
+
+Completed
+
+[x] Vision
+
+[x] World
+
+[x] Agent
+
+[x] Memory
+
+[x] Mind Simulation
+
+[x] Communication
+
+[x] Relationship
+
+[x] Action
+
+[x] Personality
+
+[x] Planner
+
+[x] Replay
+
+[x] Mind Visualizer
+
+[x] Dungeon Master
+
+[x] Architecture
+
+Mục tiêu:
+
+Khóa toàn bộ kiến trúc V1
+để hạn chế refactor trong tương lai.
+
+-----------------------------------------------------------
+Phase 1 — Living Agent (V1)
+-----------------------------------------------------------
+
+Objective
+
+Tạo ra một Agent
+có thể tự sinh tồn
+trong một thế giới đơn giản.
+
+Core Engine
+
+[ ] ECS Framework
+
+[ ] Simulation Tick
+
+[ ] Event System
+
+[ ] Serialization
+
+World
+
+[ ] Time
+
+[ ] Resources
+
+[ ] Basic Weather
+
+[ ] Basic Physics
+
+Agent
+
+[ ] Observation
+
+[ ] Memory
+
+[ ] Personality
+
+[ ] Planner
+
+[ ] Mind Simulation
+
+[ ] Action
+
+[ ] Communication
+
+Relationship
+
+[ ] Trust
+
+[ ] Familiarity
+
+[ ] Respect
+
+Developer Tools
+
+[ ] Replay
+
+[ ] Mind Visualizer
+
+[ ] Debug Overlay
+
+Dungeon Master
+
+[ ] Rule-based Opportunity Injection
+
+Definition of Success
+
+- Agent có thể sống nhiều ngày.
+
+- Có thể tự tìm thức ăn.
+
+- Có thể tự thay đổi kế hoạch.
+
+- Có thể ghi nhớ.
+
+- Có thể giao tiếp.
+
+- Có thể tạo ra những hành vi
+  không được viết sẵn.
+
+-----------------------------------------------------------
+Phase 2 — Living Society (V2)
+-----------------------------------------------------------
+
+Objective
+
+Nhiều Agent
+có thể cùng tồn tại
+và hình thành xã hội đơn giản.
+
+Features
+
+[ ] Group Formation
+
+[ ] Friendship
+
+[ ] Cooperation
+
+[ ] Conflict
+
+[ ] Leadership
+
+[ ] Reputation
+
+[ ] Memory Decay
+
+[ ] Emotion Expansion
+
+World
+
+[ ] Basic Animal AI
+
+[ ] Plant Growth
+
+[ ] Resource Regeneration
+
+Definition of Success
+
+Agent bắt đầu tạo ra
+các mối quan hệ dài hạn.
+
+-----------------------------------------------------------
+Phase 3 — Living World (V3)
+-----------------------------------------------------------
+
+Objective
+
+Biến World
+thành một hệ sinh thái sống.
+
+Features
+
+[ ] Ecology
+
+[ ] Food Chain
+
+[ ] Animal Population
+
+[ ] Climate
+
+[ ] Seasons
+
+[ ] Natural Disaster
+
+Dungeon Master
+
+[ ] Dynamic Story Rhythm
+
+[ ] Adaptive Opportunity Injection
+
+Definition of Success
+
+World có thể tự thay đổi
+ngay cả khi không có Agent.
+
+-----------------------------------------------------------
+Phase 4 — Living Civilization (V4)
+-----------------------------------------------------------
+
+Objective
+
+Cho phép xã hội
+tự tiến hóa.
+
+Features
+
+[ ] Villages
+
+[ ] Economy
+
+[ ] Culture
+
+[ ] Language
+
+[ ] Politics
+
+[ ] Religion
+
+[ ] Multi-generation Simulation
+
+Definition of Success
+
+Xuất hiện
+những nền văn minh đầu tiên.
+
+-----------------------------------------------------------
+Phase 5 — Research Platform
+-----------------------------------------------------------
+
+Objective
+
+Biến Island Simulation
+thành một nền tảng nghiên cứu.
+
+Features
+
+[ ] Plugin System
+
+[ ] Custom Planner
+
+[ ] Custom Memory
+
+[ ] Custom Reasoning Engine
+
+[ ] Benchmark Framework
+
+[ ] AI Experiment Tools
+
+Definition of Success
+
+Người khác
+có thể xây dựng
+Agent của riêng họ
+trên cùng một Engine.
+
+-----------------------------------------------------------
+Development Principles
+-----------------------------------------------------------
+
+1.
+
+Code only after
+the design is stable.
+
+----------------------------------------
+
+2.
+
+Keep every module
+independent.
+
+----------------------------------------
+
+3.
+
+Prefer emergence
+over hardcoded behavior.
+
+----------------------------------------
+
+4.
+
+LLM is expensive.
+
+Call it only
+when necessary.
+
+----------------------------------------
+
+5.
+
+Every new feature
+must support
+the Vision.
+
+Otherwise,
+move it to a future version.
+
+-----------------------------------------------------------
+Long-term Dream
+-----------------------------------------------------------
+
+One day,
+
+people will stop asking
+
+"How does this AI work?"
+
+and start asking
+
+"What happened to them?"
+
+At that moment,
+
+Island Simulation
+will no longer be
+just an AI project.
+
+It will become
+a living world.
+===========================================================

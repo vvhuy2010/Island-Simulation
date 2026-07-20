@@ -1,0 +1,388 @@
+===========================================================
+15_ACTION
+===========================================================
+
+"Thought decides.
+Action changes the world."
+
+(Action là đơn vị nhỏ nhất có thể thực thi trong Simulation.
+
+Planner tạo kế hoạch.
+
+Action Factory tạo Action.
+
+Action chỉ chịu trách nhiệm thay đổi World.)
+
+-----------------------------------------------------------
+1. Mục tiêu
+-----------------------------------------------------------
+
+Action đại diện cho một hành động cụ thể
+mà Agent thực hiện trong World.
+
+Action không có Goal.
+
+Action không biết Personality.
+
+Action không biết Memory.
+
+Action chỉ biết:
+
+"Tôi phải làm gì."
+
+-----------------------------------------------------------
+2. Action Structure
+-----------------------------------------------------------
+
+Mỗi Action gồm:
+
+- Type
+
+- Target
+
+- Parameters
+
+- Duration
+
+- Progress
+
+- Cost
+
+- Status
+
+Target là đối tượng chính
+mà Action tác động tới.
+
+Parameters chứa dữ liệu bổ sung
+cho từng loại Action.
+
+Ví dụ:
+
+Walk
+
+Target:
+Tree_15
+
+------------------------
+
+Trade
+
+Target:
+Agent_B
+
+Parameters:
+
+- Item
+- Quantity
+
+------------------------
+
+Build
+
+Target:
+Location_12
+
+Parameters:
+
+- Blueprint
+
+-----------------------------------------------------------
+3. Action Lifecycle
+-----------------------------------------------------------
+
+Created
+
+↓
+
+Queued
+
+↓
+
+Running
+
+↓
+
+Completed
+
+Một Action cũng có thể:
+
+Running
+
+↓
+
+Interrupted
+
+↓
+
+Cancelled
+
+hoặc
+
+↓
+
+Failed
+
+-----------------------------------------------------------
+4. Action Categories
+-----------------------------------------------------------
+
+Movement
+
+- Walk
+- Run
+
+------------------------
+
+Gathering
+
+- Pick
+- Chop Tree
+- Mine
+
+------------------------
+
+Survival
+
+- Eat
+- Drink
+- Sleep
+
+------------------------
+
+Construction
+
+- Build
+- Craft
+
+------------------------
+
+Communication
+
+- Talk
+- Trade
+
+------------------------
+
+Combat
+
+- Attack
+- Defend
+
+------------------------
+
+Passive
+
+- Observe
+- Wait
+- Do Nothing
+
+-----------------------------------------------------------
+5. Action Properties
+-----------------------------------------------------------
+
+Preconditions
+
+Điều kiện cần.
+
+Ví dụ:
+
+Có rìu.
+
+Có đủ gỗ.
+
+Có thể tiếp cận Target.
+
+------------------------
+
+Duration
+
+Thời gian thực hiện.
+
+------------------------
+
+Cost
+
+Ví dụ:
+
+Energy
+
+Hunger
+
+Tool Durability
+
+------------------------
+
+Effects
+
+Ảnh hưởng sau khi hoàn thành.
+
+Ví dụ:
+
+Inventory thay đổi.
+
+World thay đổi.
+
+Relationship thay đổi.
+
+-----------------------------------------------------------
+6. Interrupt
+-----------------------------------------------------------
+
+Action có thể bị ngắt.
+
+Ví dụ:
+
+- Sói xuất hiện.
+
+- Thiên tai.
+
+- Goal thay đổi.
+
+- Target biến mất.
+
+Planner sẽ quyết định:
+
+Tiếp tục.
+
+Hay tạo Action mới.
+
+-----------------------------------------------------------
+7. Action Factory
+-----------------------------------------------------------
+
+Planner không tạo Action trực tiếp.
+
+Planner chỉ quyết định:
+
+"Tôi cần Walk."
+
+"Tôi cần Chop Tree."
+
+"Tôi cần Build."
+
+Action Factory sẽ tạo Action Object
+theo cấu trúc chuẩn.
+
+Planner
+
+↓
+
+Action Factory
+
+↓
+
+Action Object
+
+Điều này giúp Planner
+không cần biết cấu trúc
+chi tiết của từng Action.
+
+-----------------------------------------------------------
+8. World Interaction
+-----------------------------------------------------------
+
+Khi Action hoàn thành.
+
+World sẽ được cập nhật.
+
+Ví dụ:
+
+Walk
+
+↓
+
+Position thay đổi.
+
+------------------------
+
+Eat
+
+↓
+
+Hunger giảm.
+
+Inventory giảm.
+
+------------------------
+
+Chop Tree
+
+↓
+
+Tree biến mất.
+
+Wood xuất hiện.
+
+-----------------------------------------------------------
+9. Design Principles
+-----------------------------------------------------------
+
+Action là đơn vị thực thi nhỏ nhất.
+
+Action luôn Atomic.
+
+Một Action chỉ thực hiện
+một nhiệm vụ duy nhất.
+
+Planner chịu trách nhiệm
+kết hợp nhiều Action
+để hoàn thành Goal.
+
+Action không biết
+Goal là gì.
+
+Action không đưa ra quyết định.
+
+Action chỉ thực hiện.
+
+-----------------------------------------------------------
+Action Pipeline
+-----------------------------------------------------------
+
+Mind Simulation
+
+↓
+
+Planner
+
+↓
+
+Action Factory
+
+↓
+
+Action Queue
+
+↓
+
+Execute Action
+
+↓
+
+World Update
+
+↓
+
+Observation
+
+-----------------------------------------------------------
+V2 Ideas
+-----------------------------------------------------------
+
+- Parallel Actions
+
+- Action Resume
+
+- Action Priority
+
+- Cooperative Action
+
+- Animation Layer
+
+- Skill-based Duration
+
+- Dynamic Success Probability
+
+- Tool Quality Modifier
+
+- Action Prediction

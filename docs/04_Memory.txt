@@ -1,0 +1,257 @@
+============================================================
+03_MEMORY.txt
+AI World Engine
+============================================================
+
+"Memory is not a storage system.
+It is a filtering system."
+
+------------------------------------------------------------
+1. Vision
+------------------------------------------------------------
+
+Memory không tồn tại để ghi lại mọi thứ đã xảy ra.
+
+Mục tiêu của Memory là lưu giữ những trải nghiệm đủ quan trọng để
+ảnh hưởng đến cách Agent suy nghĩ, hình thành niềm tin và đưa ra
+quyết định trong tương lai.
+
+Một Agent không nên nhớ tất cả.
+
+Nó chỉ nên nhớ những điều thật sự có ý nghĩa.
+
+------------------------------------------------------------
+2. Design Principles
+------------------------------------------------------------
+
+2.1 Selective Memory
+
+Không phải mọi hành động đều được lưu.
+
+Ví dụ
+
+- Đi bộ
+- Ăn
+- Nhặt đá
+
+Thông thường sẽ không trở thành Memory.
+
+Chỉ những trải nghiệm quan trọng mới được lưu lại.
+
+------------------------------------------------------------
+
+2.2 Memory influences decisions
+
+Memory không chỉ lưu trữ quá khứ.
+
+Memory thay đổi
+
+- Beliefs
+- Relationship
+- Emotion
+- Future Decisions
+
+Một Agent hôm nay sẽ khác chính nó ngày hôm qua
+nhờ những trải nghiệm đã tích lũy.
+
+------------------------------------------------------------
+
+2.3 Memory is subjective
+
+Cùng một sự kiện.
+
+Hai Agent có thể ghi nhớ theo hai cách khác nhau.
+
+Ví dụ
+
+Mưa
+
+Agent đã có nhà
+
+↓
+
+Không quan trọng.
+
+Agent chưa có nhà
+
+↓
+
+Rất quan trọng.
+
+Memory phản ánh góc nhìn của Agent,
+không phải sự thật tuyệt đối.
+
+------------------------------------------------------------
+3. Memory Types
+------------------------------------------------------------
+
+Version 1
+
+Working Memory
+
+Thông tin ngắn hạn.
+
+Ví dụ
+
+- Agent vừa nhìn thấy con thỏ.
+- Vừa nghe thấy tiếng động.
+
+------------------------------------------------------------
+
+Episodic Memory
+
+Những trải nghiệm đáng nhớ.
+
+Ví dụ
+
+- B từng cứu mình.
+- Lần đầu săn thành công.
+- Nhà bị cháy.
+
+------------------------------------------------------------
+
+Social Memory
+
+Thông tin về Agent khác.
+
+Ví dụ
+
+- B đáng tin.
+- C từng phản bội.
+- D thường giúp đỡ người khác.
+
+------------------------------------------------------------
+
+Version 2
+
+- World Knowledge
+- Self Memory
+
+------------------------------------------------------------
+4. Memory Creation
+------------------------------------------------------------
+
+Mỗi Event sẽ được đánh giá trước khi lưu.
+
+Memory Score
+
+=
+
+Novelty
+
++
+
+Emotion
+
++
+
+Survival Impact
+
++
+
+Social Impact
+
++
+
+Goal Relevance
+
+Nếu vượt ngưỡng.
+
+↓
+
+Memory được tạo.
+
+------------------------------------------------------------
+5. Hard Rules
+------------------------------------------------------------
+
+Một số sự kiện luôn được lưu.
+
+Ví dụ
+
+- Chết
+- Bị phản bội
+- Xây căn nhà đầu tiên
+- Thiên tai lớn
+
+Engine sẽ luôn tạo Memory cho các sự kiện này.
+
+------------------------------------------------------------
+6. Memory Pipeline
+------------------------------------------------------------
+
+World Event
+
+↓
+
+Importance Evaluation
+
+↓
+
+Remember?
+
+↓
+
+Memory Summary
+
+↓
+
+Store Memory
+
+↓
+
+Update Beliefs
+
+↓
+
+Affect Future Decisions
+
+------------------------------------------------------------
+7. Architecture
+------------------------------------------------------------
+
+Memory
+
+├── Working Memory
+├── Episodic Memory
+└── Social Memory
+
+Version 2
+
+Memory
+
+├── Working Memory
+├── Episodic Memory
+├── Social Memory
+├── World Knowledge
+└── Self Memory
+
+------------------------------------------------------------
+8. Version 1 Scope
+------------------------------------------------------------
+
+Bao gồm
+
+✓ Working Memory
+
+✓ Episodic Memory
+
+✓ Social Memory
+
+✓ Memory Score
+
+✓ Hard Rules
+
+Chưa bao gồm
+
+- Memory Decay
+- False Memory
+- Reflection
+- Dreaming
+- Semantic Compression
+- Long-term Knowledge
+- Self Identity
+
+============================================================
+End of File
+============================================================

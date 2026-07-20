@@ -1,0 +1,334 @@
+============================================================
+02_AGENT.txt
+AI World Engine
+============================================================
+
+"An Agent is defined not by what it can do,
+but by why it chooses to do it."
+
+------------------------------------------------------------
+1. Vision
+------------------------------------------------------------
+
+Agent là một cá thể tự trị sống trong World.
+
+Agent không nhận lệnh từ người chơi hay từ World.
+
+Nó quan sát môi trường, ghi nhớ trải nghiệm, hình thành mục tiêu và
+tự đưa ra quyết định dựa trên trạng thái hiện tại của bản thân.
+
+Mỗi Agent có thể phát triển theo những hướng khác nhau mặc dù bắt đầu
+trong cùng một thế giới.
+
+------------------------------------------------------------
+2. Observation
+------------------------------------------------------------
+
+Observation là toàn bộ thông tin Agent có thể nhận được tại một thời điểm.
+
+Agent KHÔNG biết toàn bộ World.
+
+Agent chỉ biết những gì nó có thể cảm nhận.
+
+Observation gồm
+
+- Trạng thái bản thân
+- Agent xung quanh
+- Resource
+- Object
+- World Event
+- Memory Recall
+
+Nguồn Observation
+
+Visual
+
+- Agent
+- Resource
+- Object
+
+Auditory
+
+- Tiếng động
+- Hội thoại
+- Cháy rừng
+- Động vật
+
+Internal
+
+- Hunger
+- Health
+- Energy
+- Emotion
+- Inventory
+
+Memory
+
+- Trải nghiệm liên quan
+- Quan hệ với Agent khác
+
+(V2)
+
+- Smell
+- Weather Feeling
+- Temperature
+
+------------------------------------------------------------
+3. Internal State
+------------------------------------------------------------
+
+Internal State mô tả trạng thái hiện tại của Agent.
+
+### Physical State
+
+- Hunger
+- Health
+- Energy
+- Body Condition
+- Inventory
+
+### Mental State
+
+- Emotion
+- Trust
+- Stress
+- Motivation
+
+### Personality
+
+Personality quyết định cách Agent nhìn nhận và phản ứng với thế giới.
+
+Personality gồm ba thành phần.
+
+Traits
+
+Đặc điểm cốt lõi.
+
+Gần như không thay đổi.
+
+Beliefs
+
+Hiểu biết và niềm tin về thế giới.
+
+Thay đổi qua trải nghiệm.
+
+Emotion
+
+Cảm xúc ngắn hạn.
+
+Thay đổi liên tục theo sự kiện.
+
+------------------------------------------------------------
+4. Decision Making
+------------------------------------------------------------
+
+Agent đưa ra quyết định theo pipeline sau.
+
+Observation
+
+↓
+
+Memory Recall
+
+↓
+
+Belief Update
+
+↓
+
+Emotion Update
+
+↓
+
+Reasoning
+
+↓
+
+Goal Selection
+
+↓
+
+Action Selection
+
+↓
+
+Execute Action
+
+↓
+
+World Update
+
+↓
+
+Repeat
+
+Planner chỉ chịu trách nhiệm giữ Goal hiện tại.
+
+LLM chỉ được gọi khi
+
+- Goal không còn hợp lệ.
+- Có Event lớn.
+- Có Interrupt.
+- Planner cần suy nghĩ lại.
+
+Điều này giúp giảm số lần gọi LLM và giữ hành vi ổn định.
+
+------------------------------------------------------------
+5. Actions
+------------------------------------------------------------
+
+Action là mọi hành động Agent có thể thực hiện.
+
+Movement
+
+- Walk
+- Run
+
+Gathering
+
+- Pick Up
+- Chop Tree
+- Mine Stone
+
+Survival
+
+- Eat
+- Drink
+- Sleep
+
+Social
+
+- Talk
+- Ask
+- Trade
+- Give
+- Lie
+
+Combat
+
+- Attack
+- Defend
+- Escape
+
+Construction
+
+- Build Shelter
+- Craft
+
+Passive
+
+- Observe
+- Wait
+- Think
+- Do Nothing
+
+Mỗi Action gồm
+
+- Preconditions
+- Cost
+- Duration
+- Effects
+- Interruptible
+
+Agent chỉ chọn Action.
+
+World quyết định Action sẽ diễn ra như thế nào.
+
+------------------------------------------------------------
+6. Communication
+------------------------------------------------------------
+
+Agent không nói chuyện trực tiếp từ LLM.
+
+Pipeline giao tiếp
+
+Observation
+
+↓
+
+Memory Recall
+
+↓
+
+Reasoning
+
+↓
+
+Intent
+
+↓
+
+Speech + Physical Action
+
+LLM sinh ra
+
+- Thought
+- Intent
+- Speech
+
+Engine quyết định
+
+- Action có hợp lệ hay không.
+- Có thể thực hiện hay không.
+
+Thought là trạng thái riêng tư.
+
+Agent khác không thể đọc.
+
+World cũng không sử dụng Thought để thay đổi simulation.
+
+Developer có thể bật Debug Mode để xem Thought khi phát triển.
+
+------------------------------------------------------------
+7. Architecture
+------------------------------------------------------------
+
+Agent
+
+├── Observation
+
+├── Memory
+
+├── Personality
+
+├── Planner
+
+├── Reasoning
+
+├── Communication
+
+└── Actions
+
+------------------------------------------------------------
+8. Version 1 Scope
+------------------------------------------------------------
+
+Bao gồm
+
+✓ Observation
+
+✓ Internal State
+
+✓ Decision Making
+
+✓ Basic Personality
+
+✓ Actions
+
+✓ Communication
+
+✓ Planner đơn giản
+
+Chưa bao gồm
+
+- Vision Cone
+- Smell
+- Hearing Range nâng cao
+- Learning System
+- Dynamic Personality
+- Reflection
+- Dreaming
+
+============================================================
+End of File
+============================================================

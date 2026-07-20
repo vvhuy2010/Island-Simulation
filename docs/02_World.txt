@@ -1,0 +1,273 @@
+============================================================
+01_WORLD.txt
+AI World Engine
+============================================================
+
+"The world does not exist for the Agents.
+The Agents exist within the world."
+
+------------------------------------------------------------
+1. Vision
+------------------------------------------------------------
+
+World là môi trường nơi các Agent sinh tồn, tương tác và phát triển.
+
+World tồn tại độc lập với Agent. Dù Agent có quan sát hay không,
+thế giới vẫn tiếp tục vận hành.
+
+Thời gian vẫn trôi.
+Động vật vẫn sinh sản.
+Cây vẫn phát triển.
+Tài nguyên vẫn thay đổi.
+Các sự kiện vẫn tiếp tục xảy ra.
+
+Mục tiêu của World không phải điều khiển Agent.
+
+Mục tiêu của World là tạo ra một môi trường đủ chân thực để
+những hành vi tự nhiên có thể xuất hiện.
+
+------------------------------------------------------------
+2. Design Principles
+------------------------------------------------------------
+
+2.1 Persistent World
+
+World luôn hoạt động.
+
+Một ngày trong simulation gồm 24 giờ.
+
+Mọi Action đều tiêu tốn thời gian.
+
+Ví dụ
+
+- Đi bộ
+- Chặt cây
+- Ngủ
+- Xây nhà
+
+Thời gian không dừng lại khi Agent suy nghĩ.
+
+------------------------------------------------------------
+
+2.2 Resource System
+
+Resource tồn tại độc lập với Agent.
+
+Một phần được tạo trước khi simulation bắt đầu.
+
+Một phần xuất hiện trong quá trình simulation.
+
+Resource gồm ba nhóm.
+
+Static Resource
+
+- Núi
+- Biển
+- Sông
+- Đá lớn
+
+Dynamic Resource
+
+- Cây
+- Cá
+- Động vật
+- Bụi quả
+
+Temporary Resource
+
+- Cây đổ
+- Xác động vật
+- Nước mưa
+- Gỗ cháy
+
+------------------------------------------------------------
+
+2.3 Resource Lifecycle
+
+Resource không tồn tại mãi mãi.
+
+Resource có thể thay đổi bởi
+
+- Agent
+- Thiên nhiên
+- World Event
+- Thời gian
+
+Ví dụ
+
+Quả
+
+↓
+
+Chín
+
+↓
+
+Thối
+
+↓
+
+Biến mất
+
+Động vật
+
+↓
+
+Già
+
+↓
+
+Chết
+
+↓
+
+Xác
+
+↓
+
+Biến mất
+
+------------------------------------------------------------
+
+2.4 World Events
+
+World có khả năng tự tạo ra các sự kiện.
+
+Agent không điều khiển sự kiện.
+
+Agent chỉ quan sát và phản ứng.
+
+Natural Events
+
+- Mưa
+- Bão
+- Cháy rừng
+- Động đất
+- Sóng thần
+
+Biological Events
+
+- Động vật sinh sản
+- Động vật di cư
+- Dịch bệnh
+- Cây phát triển
+
+Human Events
+
+- Người lạ
+- Tàu cứu hộ
+- Thùng đồ trôi dạt
+- Trại bỏ hoang
+
+------------------------------------------------------------
+
+2.5 Ecology
+
+Hệ sinh thái hoạt động độc lập.
+
+Ví dụ
+
+- Động vật ăn cây
+- Thú săn săn con mồi
+- Cây tiếp tục phát triển
+- Xác động vật trở thành tài nguyên
+
+World vẫn thay đổi ngay cả khi không có Agent.
+
+------------------------------------------------------------
+
+2.6 Time System
+
+Agent chỉ quyết định
+
+"Tôi muốn làm gì?"
+
+World quyết định
+
+"Hành động đó mất bao lâu."
+
+Ví dụ
+
+Action
+
+↓
+
+Chặt cây
+
+↓
+
+World
+
+↓
+
+Cây nhỏ
+
+20 phút
+
+Cây lớn
+
+60 phút
+
+Điều này giúp Agent không cần biết chi tiết của World.
+
+------------------------------------------------------------
+3. Architecture
+------------------------------------------------------------
+
+World
+
+├── Time System
+├── Resource System
+├── Ecology System
+├── Event System
+└── Agent Layer
+
+Các module hoạt động độc lập nhưng luôn tương tác với nhau.
+
+Ví dụ
+
+Mưa
+
+↓
+
+Cây phát triển
+
+↓
+
+Nhiều quả hơn
+
+↓
+
+Động vật tăng
+
+↓
+
+Agent có thêm thức ăn
+
+------------------------------------------------------------
+4. Version 1 Scope
+------------------------------------------------------------
+
+Bao gồm
+
+✓ Time System
+
+✓ Resource System
+
+✓ Event System
+
+✓ Ecology cơ bản
+
+✓ Resource Lifecycle
+
+Chưa bao gồm
+
+- Mùa
+- Khí hậu dài hạn
+- Tiến hóa sinh học
+- Thảm họa quy mô lớn
+- Thay đổi địa hình
+
+============================================================
+End of File
+============================================================

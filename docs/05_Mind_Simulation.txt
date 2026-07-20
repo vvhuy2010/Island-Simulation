@@ -1,0 +1,231 @@
+===========================================================
+05_MIND_SIMULATION
+===========================================================
+
+"The world provides information.
+The mind gives it meaning."
+
+(Mind Simulation không phải là Planner.
+Nó không trực tiếp điều khiển Agent.
+Nhiệm vụ của nó là mô phỏng quá trình suy nghĩ của Agent
+để đưa ra một quyết định.)
+
+-----------------------------------------------------------
+1. Mục tiêu
+-----------------------------------------------------------
+
+Mind Simulation là cầu nối giữa Observation và Planner.
+
+Nó giúp Agent:
+
+- Hiểu tình huống hiện tại.
+- Đánh giá các lựa chọn.
+- Đưa ra quyết định phù hợp với Personality,
+  Memory, Emotion và Goal hiện tại.
+
+Mind Simulation không thực hiện Action.
+
+Nó chỉ quyết định Agent muốn làm gì.
+
+-----------------------------------------------------------
+2. Trigger
+-----------------------------------------------------------
+
+Mind Simulation chỉ được gọi khi thật sự cần.
+
+Các trường hợp bao gồm:
+
+• Có Goal mới.
+
+• Planner bị Interrupt bởi một sự kiện quan trọng.
+
+Ví dụ:
+
+- Sói xuất hiện.
+- Thiên tai.
+- Agent khác yêu cầu giúp đỡ.
+- Resource quan trọng biến mất.
+
+• Reflection sau khi Goal kết thúc.
+
+Mind Simulation không chạy mỗi Tick của World.
+
+-----------------------------------------------------------
+3. Input
+-----------------------------------------------------------
+
+Mind Simulation không nhìn thấy toàn bộ thế giới.
+
+Nó chỉ nhận Context từ Engine.
+
+Input bao gồm:
+
+Observation
+- Những gì Agent đang nhìn thấy.
+- Những gì Agent đang nghe thấy.
+- Event trong phạm vi quan sát.
+
+Current Goal
+
+Relevant Memory
+- Episodic Memory
+- Social Memory
+- Working Memory
+
+Current Emotion
+
+Relationship
+
+Personality
+
+Mind Simulation không tự truy cập Memory.
+Memory Engine sẽ Recall trước khi gọi LLM.
+
+-----------------------------------------------------------
+4. Reasoning Process
+-----------------------------------------------------------
+
+Mind Simulation sẽ thực hiện các bước sau:
+
+Build Context
+
+↓
+
+Generate Possible Intentions
+
+↓
+
+Evaluate Consequences
+
+↓
+
+Select Decision
+
+Nó không tạo Action cụ thể.
+
+Nó chỉ quyết định:
+
+"Tôi muốn làm gì tiếp theo."
+
+Planner sẽ quyết định:
+
+"Làm điều đó bằng cách nào."
+
+-----------------------------------------------------------
+5. Output
+-----------------------------------------------------------
+
+Mind Simulation trả về một Decision Packet.
+
+Ví dụ:
+
+{
+    "goal": "HelpAgent",
+
+    "change_goal": true,
+
+    "priority": "High",
+
+    "reason":
+    "Agent B bị thương và cần giúp đỡ."
+}
+
+Planner sẽ nhận Decision Packet
+để xây dựng Action Plan.
+
+-----------------------------------------------------------
+6. Thought
+-----------------------------------------------------------
+
+Thought là suy nghĩ nội bộ của Agent.
+
+Thought không phải Output của Engine.
+
+Thought chỉ tồn tại bên trong Agent.
+
+Ví dụ:
+
+"Tôi rất đói.
+
+Nhưng B từng giúp tôi.
+
+Có lẽ mình nên cứu B trước."
+
+Thought mặc định sẽ không được
+Agent khác nhìn thấy.
+
+Chỉ Debug Mode hoặc Replay
+mới có thể hiển thị Thought.
+
+-----------------------------------------------------------
+7. Reflection
+-----------------------------------------------------------
+
+Sau khi Goal kết thúc,
+Mind Simulation có thể tạo Reflection.
+
+Ví dụ:
+
+"Mình đã đến quá muộn."
+
+"Quyết định này là đúng."
+
+"Lần sau mình sẽ chuẩn bị tốt hơn."
+
+Reflection sẽ được gửi sang Memory Engine.
+
+Memory Engine quyết định
+Reflection có trở thành ký ức hay không.
+
+-----------------------------------------------------------
+8. Design Principles
+-----------------------------------------------------------
+
+Mind Simulation chỉ chịu trách nhiệm suy nghĩ.
+
+Không điều khiển World.
+
+Không thực hiện Action.
+
+Không quản lý Memory.
+
+Không lập kế hoạch chi tiết.
+
+Mỗi module chỉ có một trách nhiệm duy nhất.
+
+World
+↓
+
+Observation
+
+↓
+
+Mind Simulation
+
+↓
+
+Decision Packet
+
+↓
+
+Planner
+
+↓
+
+Action
+
+↓
+
+World
+
+-----------------------------------------------------------
+V2 Ideas
+-----------------------------------------------------------
+
+- Multi-step Reasoning
+- Self Reflection nhiều vòng
+- Intuition
+- Hypothesis Generation
+- Internal Debate
+- Automatic Goal Reprioritization
+- Long-term Planning

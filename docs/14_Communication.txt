@@ -1,0 +1,273 @@
+===========================================================
+14_COMMUNICATION
+===========================================================
+
+"Communication is not about speaking.
+It is about transferring intention."
+
+(Communication không quyết định Agent muốn gì.
+Nó chỉ giúp Agent truyền đạt điều mình muốn
+đến một Agent khác.)
+
+-----------------------------------------------------------
+1. Mục tiêu
+-----------------------------------------------------------
+
+Communication là cầu nối giữa các Agent.
+
+Nó chuyển một Communication Intent
+thành thông tin mà Agent khác có thể hiểu.
+
+Communication không quyết định Goal.
+
+Communication không quyết định Decision.
+
+Communication không thay đổi Emotion.
+
+Communication chỉ chịu trách nhiệm
+truyền đạt thông tin.
+
+-----------------------------------------------------------
+2. Communication Flow
+-----------------------------------------------------------
+
+Mind Simulation
+
+↓
+
+Communication Intent
+
+↓
+
+Communication Engine
+
+↓
+
+Speech Event
+
+↓
+
+Observation của Agent khác
+
+↓
+
+Memory
+
+↓
+
+Relationship
+
+-----------------------------------------------------------
+3. Input
+-----------------------------------------------------------
+
+Communication nhận:
+
+- Target Agent
+
+- Communication Intent
+
+- Message
+
+- Context
+
+Communication không tự tạo Goal.
+
+Communication không tự quyết định
+nội dung cần truyền đạt.
+
+-----------------------------------------------------------
+4. Communication Intent
+-----------------------------------------------------------
+
+Các Intent cơ bản:
+
+Information
+
+- Inform
+
+- Warn
+
+------------------------
+
+Request
+
+- Ask
+
+- Request Help
+
+- Trade
+
+------------------------
+
+Response
+
+- Agree
+
+- Refuse
+
+------------------------
+
+Social
+
+- Thank
+
+- Apologize
+
+Các Intent khác có thể bổ sung
+ở các phiên bản sau.
+
+-----------------------------------------------------------
+5. Communication Modifier
+-----------------------------------------------------------
+
+Modifier mô tả cách truyền thông tin.
+
+Ví dụ:
+
+Truth
+
+Lie
+
+Hide Information
+
+Exaggerate
+
+Communication không quyết định
+có nói dối hay không.
+
+Modifier được tạo bởi Mind Simulation.
+
+-----------------------------------------------------------
+6. Output
+-----------------------------------------------------------
+
+Communication tạo ra một Speech Event.
+
+Ví dụ:
+
+"Tôi còn hai con cá."
+
+"Có sói!"
+
+"Cậu giúp mình được không?"
+
+Speech Event sẽ được World
+phát tới các Agent khác.
+
+-----------------------------------------------------------
+7. Communication và Mind
+-----------------------------------------------------------
+
+Mind Simulation quyết định:
+
+- Có nên nói hay không.
+
+- Nói với ai.
+
+- Muốn truyền điều gì.
+
+- Có trung thực hay không.
+
+Communication chỉ chuyển ý định đó
+thành lời nói.
+
+-----------------------------------------------------------
+8. Communication và Memory
+-----------------------------------------------------------
+
+Speech Event là một loại Event.
+
+Agent khác có thể:
+
+- Quan sát.
+
+- Hiểu.
+
+- Ghi nhớ.
+
+- Đánh giá.
+
+Sau đó cập nhật:
+
+Memory
+
+↓
+
+Relationship
+
+↓
+
+Emotion
+
+-----------------------------------------------------------
+9. Design Principles
+-----------------------------------------------------------
+
+Communication không tạo Decision.
+
+Communication không sửa Decision.
+
+Communication không thay đổi Goal.
+
+Communication chỉ truyền tải thông tin.
+
+Mỗi module chỉ có một trách nhiệm duy nhất.
+
+-----------------------------------------------------------
+Communication Pipeline
+-----------------------------------------------------------
+
+Mind Simulation
+
+↓
+
+Communication Intent
+
+↓
+
+Communication Engine
+
+↓
+
+Speech Event
+
+↓
+
+Other Agent Observation
+
+↓
+
+Memory
+
+↓
+
+Relationship
+
+↓
+
+Mind Simulation
+
+-----------------------------------------------------------
+V2 Ideas
+-----------------------------------------------------------
+
+- Tone of Voice
+
+- Gesture
+
+- Facial Expression
+
+- Body Language
+
+- Misunderstanding
+
+- Language System
+
+- Group Conversation
+
+- Non-verbal Communication
+
+- Conversation Memory
+
+- Persuasion

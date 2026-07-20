@@ -1,0 +1,235 @@
+===========================================================
+06_DUNGEON_MASTER
+===========================================================
+
+"A good world does not tell stories.
+It creates the conditions for stories to emerge."
+
+(Dungeon Master là hệ thống quan sát Simulation
+và thỉnh thoảng tạo ra những cơ hội mới cho thế giới.
+
+Dungeon Master không điều khiển Agent.
+
+Dungeon Master chỉ tác động lên World.)
+
+-----------------------------------------------------------
+1. Mục tiêu
+-----------------------------------------------------------
+
+Dungeon Master giúp Simulation
+duy trì nhịp điệu tự nhiên.
+
+Mục tiêu:
+
+- Tránh Simulation quá tẻ nhạt.
+
+- Tránh Simulation quá hỗn loạn.
+
+- Tạo cơ hội để những câu chuyện mới xuất hiện.
+
+Dungeon Master không viết kịch bản.
+
+-----------------------------------------------------------
+2. Quan sát thế giới
+-----------------------------------------------------------
+
+Dungeon Master liên tục theo dõi:
+
+- Thời gian
+
+- Thời tiết
+
+- Resource
+
+- Ecology
+
+- Population
+
+- Các sự kiện gần đây
+
+Dungeon Master không đọc:
+
+- Memory
+
+- Planner
+
+- Personality
+
+- Reasoning
+
+Dungeon Master không biết
+Agent đang suy nghĩ gì.
+
+-----------------------------------------------------------
+3. World Rhythm
+-----------------------------------------------------------
+
+Dungeon Master duy trì
+nhịp điệu của Simulation.
+
+Ví dụ:
+
+Calm
+
+↓
+
+Build Up
+
+↓
+
+Conflict
+
+↓
+
+Recovery
+
+↓
+
+Calm
+
+Không phải lúc nào
+Simulation cũng cần Event mới.
+
+Khoảng lặng cũng là một phần
+của câu chuyện.
+
+-----------------------------------------------------------
+4. Opportunity Injection
+-----------------------------------------------------------
+
+Dungeon Master không tạo Story.
+
+Dungeon Master tạo Opportunity.
+
+Ví dụ:
+
+- Một cơn mưa.
+
+- Một con thuyền trôi dạt.
+
+- Một mùa lạnh.
+
+- Một đàn chim xuất hiện.
+
+Sau đó World và Agent
+tự phản ứng.
+
+-----------------------------------------------------------
+5. Event Evaluation
+-----------------------------------------------------------
+
+Trước khi tạo Opportunity,
+Dungeon Master đánh giá:
+
+- Simulation có đang quá yên bình?
+
+- Simulation có đang quá hỗn loạn?
+
+- Thế giới đã có đủ thời gian hồi phục chưa?
+
+Dungeon Master không cố
+tạo Event liên tục.
+
+-----------------------------------------------------------
+6. World Interaction
+-----------------------------------------------------------
+
+Dungeon Master chỉ tác động
+lên World.
+
+Ví dụ:
+
+Weather
+
+Climate
+
+Resource Distribution
+
+Special Opportunity
+
+Sau đó Ecology và Agent
+tự xử lý mọi hậu quả.
+
+-----------------------------------------------------------
+7. Design Principles
+-----------------------------------------------------------
+
+Dungeon Master không điều khiển Agent.
+
+Dungeon Master không tạo kịch bản.
+
+Dungeon Master không ép Agent
+đi theo một câu chuyện.
+
+Dungeon Master chỉ tạo điều kiện
+để những câu chuyện
+có thể tự xảy ra.
+
+Mọi quyết định cuối cùng
+vẫn thuộc về Agent.
+
+-----------------------------------------------------------
+Dungeon Master Pipeline
+-----------------------------------------------------------
+
+Observe World
+
+↓
+
+Evaluate World Rhythm
+
+↓
+
+Need Intervention?
+
+↓
+
+No
+
+↓
+
+Wait
+
+------------------------
+
+Yes
+
+↓
+
+Create Opportunity
+
+↓
+
+Inject into World
+
+↓
+
+World Reacts
+
+↓
+
+Ecology Reacts
+
+↓
+
+Agents React
+
+-----------------------------------------------------------
+V2 Ideas
+-----------------------------------------------------------
+
+- LLM Narrative Director
+
+- Dynamic Story Arc
+
+- Seasonal Events
+
+- Adaptive Difficulty
+
+- World Mood
+
+- Multi-Island Events
+
+- Civilization Events
+
+- Global History

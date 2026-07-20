@@ -1,0 +1,359 @@
+==========================================
+12_PLANNER
+==========================================
+
+"Planning is deciding what to do.
+Reasoning is deciding why."
+
+Planner không chịu trách nhiệm suy nghĩ.
+Planner chịu trách nhiệm biến một quyết định thành chuỗi hành động có thể thực hiện trong thế giới.
+
+Mục tiêu của Planner là giúp Agent hoàn thành Goal với số lần gọi LLM ít nhất có thể.
+
+==================================================
+1. Planner Pipeline
+==================================================
+
+Observation
+      │
+      ▼
+Need Detection
+      │
+      ▼
+Memory Recall
+      │
+      ▼
+Motivation
+      │
+      ▼
+Goal Selection
+      │
+      ▼
+Task Planning
+      │
+      ▼
+Primitive Action Queue
+      │
+      ▼
+Execute
+      │
+      ▼
+Reflection
+      │
+      ▼
+Idle / Social
+      │
+      ▼
+Repeat
+
+==================================================
+2. Need Detection
+==================================================
+
+Planner luôn bắt đầu bằng việc xác định Agent đang cần điều gì.
+
+Ví dụ:
+
+- Hunger
+- Thirst
+- Sleep
+- Health
+- Safety
+- Social
+- Curiosity
+
+Need chỉ mô tả trạng thái hiện tại.
+
+Need KHÔNG phải Goal.
+
+Ví dụ:
+
+Hunger = 90
+
+↓
+
+Need:
+"Tôi cần thức ăn."
+
+==================================================
+3. Motivation
+==================================================
+
+Goal không chỉ sinh ra từ Need.
+
+Planner sẽ tổng hợp nhiều yếu tố để tạo Motivation.
+
+Motivation chịu ảnh hưởng bởi:
+
+- Observation
+- Memory
+- Personality
+- Emotion
+- Relationship
+- Current Need
+
+Ví dụ:
+
+Đang đói.
+
+Nhớ hôm qua thấy Berry.
+
+Tin tưởng Agent B.
+
+↓
+
+Motivation:
+
+"Tôi muốn sang phía Đông tìm Berry cùng B."
+
+==================================================
+4. Goal Selection
+==================================================
+
+Planner chỉ giữ một Goal chính tại một thời điểm.
+
+Ví dụ:
+
+- Find Food
+- Build Shelter
+- Explore
+- Talk
+- Escape
+- Help Agent
+
+Goal có thể bị thay đổi khi:
+
+- Goal hoàn thành.
+- Goal không còn khả thi.
+- Xuất hiện sự kiện quan trọng.
+- Need mới có mức ưu tiên cao hơn.
+
+==================================================
+5. Task Planning
+==================================================
+
+Planner chia Goal thành nhiều Task nhỏ.
+
+Ví dụ:
+
+Goal
+
+Build Shelter
+
+↓
+
+Tasks
+
+- Find Location
+- Gather Wood
+- Gather Stone
+- Build Shelter
+
+Task không phải Primitive Action.
+
+==================================================
+6. Primitive Action Queue
+==================================================
+
+Task tiếp tục được chuyển thành các Action cơ bản.
+
+Ví dụ:
+
+Move
+
+Observe
+
+Pick
+
+Drop
+
+Craft
+
+Place
+
+Talk
+
+Attack
+
+Eat
+
+Sleep
+
+Wait
+
+Do Nothing
+
+Planner chỉ sử dụng những Primitive Action mà Engine hỗ trợ.
+
+Planner KHÔNG được tạo Action mới.
+
+==================================================
+7. Executor
+==================================================
+
+Executor chịu trách nhiệm thực thi Action.
+
+Ví dụ:
+
+Move To Tree
+
+↓
+
+Navigation
+
+↓
+
+Walk
+
+↓
+
+Collision
+
+↓
+
+Duration
+
+↓
+
+Action Finished
+
+Planner không xử lý:
+
+- Physics
+- Animation
+- Path Finding
+
+Planner chỉ gửi yêu cầu.
+
+==================================================
+8. Interrupt System
+==================================================
+
+Planner không gọi LLM liên tục.
+
+LLM chỉ được gọi khi Plan hiện tại không còn hợp lệ.
+
+Ví dụ:
+
+- Resource biến mất.
+- Xuất hiện nguy hiểm.
+- Agent khác chen vào.
+- Goal bị thất bại.
+- Có Event quan trọng.
+
+Interrupt
+
+↓
+
+Reasoning
+
+↓
+
+New Goal
+
+↓
+
+New Plan
+
+==================================================
+9. Reflection
+==================================================
+
+Sau mỗi Goal hoàn thành.
+
+Planner thực hiện Reflection.
+
+Reflection dùng để:
+
+- Đánh giá kết quả.
+- Cập nhật Memory.
+- Cập nhật Relationship.
+- Cập nhật Emotion.
+- Điều chỉnh Belief.
+
+Ví dụ:
+
+"Tôi vừa săn được hươu."
+
+↓
+
+Đáng nhớ.
+
+↓
+
+Lưu Episodic Memory.
+
+==================================================
+10. Idle Mode
+==================================================
+
+Nếu:
+
+Không có Goal.
+
+Không có Danger.
+
+Không có Need khẩn cấp.
+
+↓
+
+Planner chuyển sang Idle Mode.
+
+Agent có thể:
+
+- Quan sát.
+- Đi dạo.
+- Ngồi nghỉ.
+- Nghĩ.
+- Trò chuyện.
+- Ở một mình.
+- Khám phá.
+
+Đây là nơi những hành vi xã hội có thể tự xuất hiện.
+
+==================================================
+11. Planner Philosophy
+==================================================
+
+Planner không suy nghĩ.
+
+Planner không có cảm xúc.
+
+Planner không quyết định đúng sai.
+
+Planner chỉ:
+
+- Chọn Goal.
+- Chia Goal thành Task.
+- Quản lý Interrupt.
+- Quản lý Action Queue.
+- Điều phối việc thực thi.
+
+Mọi quyết định phức tạp đều thuộc về Reasoning Engine.
+
+==================================================
+12. Design Principles
+==================================================
+
+- Goal được tạo từ Motivation.
+- Motivation được hình thành từ nhiều nguồn.
+- Planner chỉ làm việc ở mức chiến lược.
+- Primitive Action là ngôn ngữ chung giữa Planner và World.
+- Planner không biết Physics.
+- Planner không biết Map.
+- Planner không biết Path Finding.
+- Planner chỉ biết Observation mà Agent nhìn thấy.
+
+==================================================
+Planner
+
+Reasoning quyết định:
+"Tôi muốn làm gì?"
+
+Planner quyết định:
+"Tôi sẽ thực hiện điều đó như thế nào?"
+
+Executor quyết định:
+"Hành động đó được thực thi ra sao?"
+
+==================================================

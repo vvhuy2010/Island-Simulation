@@ -1,0 +1,264 @@
+===========================================================
+13_MIND_VISUALIZER
+===========================================================
+
+"If you cannot understand why an Agent acts,
+you cannot improve the Agent."
+
+(Mind Visualizer là công cụ giúp Developer
+quan sát trạng thái bên trong của Agent theo thời gian thực.
+
+Nó không thay đổi AI.
+
+Nó chỉ hiển thị AI.)
+
+-----------------------------------------------------------
+1. Mục tiêu
+-----------------------------------------------------------
+
+Mind Visualizer giúp:
+
+- Debug AI.
+
+- Hiểu quá trình suy nghĩ.
+
+- Theo dõi Goal.
+
+- Theo dõi Emotion.
+
+- Theo dõi Planner.
+
+- Quan sát sự thay đổi của Agent theo thời gian.
+
+Mind Visualizer chỉ đọc dữ liệu.
+
+Không can thiệp Simulation.
+
+-----------------------------------------------------------
+2. Data Source
+-----------------------------------------------------------
+
+Mind Visualizer đọc dữ liệu từ:
+
+Current Agent State
+
+Replay
+
+World State
+
+Mind Visualizer không gọi LLM.
+
+Không chạy lại Planner.
+
+Không thực hiện Reasoning.
+
+-----------------------------------------------------------
+3. Visual Panels
+-----------------------------------------------------------
+
+Mỗi Agent sẽ có các Panel.
+
+------------------------------------------------
+
+Physical State
+
+- Health
+
+- Hunger
+
+- Energy
+
+- Inventory
+
+------------------------------------------------
+
+Mind
+
+- Current Goal
+
+- Current Thought
+
+- Emotion
+
+------------------------------------------------
+
+Planner
+
+- Current Plan
+
+- Current Action
+
+------------------------------------------------
+
+Memory
+
+- Recent Memories
+
+- Important Memories
+
+------------------------------------------------
+
+Relationship
+
+- Nearby Relationships
+
+- Trust
+
+- Respect
+
+- Affinity
+
+------------------------------------------------
+
+Observation
+
+- Những gì Agent đang nhìn thấy
+
+- Nearby Agent
+
+- Nearby Resource
+
+- Nearby Event
+
+-----------------------------------------------------------
+4. Visualization
+-----------------------------------------------------------
+
+Mind Visualizer ưu tiên hiển thị
+bằng hình ảnh thay vì văn bản.
+
+Ví dụ:
+
+- Progress Bar
+
+- Icon
+
+- Timeline
+
+- Color
+
+- Graph
+
+Không ưu tiên hiển thị JSON.
+
+Mục tiêu là:
+
+Chỉ cần nhìn
+có thể hiểu Agent đang ở trạng thái gì.
+
+-----------------------------------------------------------
+5. Timeline
+-----------------------------------------------------------
+
+Mind Visualizer hỗ trợ xem
+theo Timeline.
+
+Có thể:
+
+Play
+
+Pause
+
+Jump
+
+Fast Forward
+
+Timeline đồng bộ với Replay.
+
+-----------------------------------------------------------
+6. Developer Mode
+-----------------------------------------------------------
+
+Developer Mode hiển thị
+chi tiết toàn bộ dữ liệu.
+
+Ví dụ:
+
+Observation
+
+↓
+
+Memory Recall
+
+↓
+
+Reasoning
+
+↓
+
+Planner
+
+↓
+
+Action
+
+↓
+
+World Update
+
+Giúp Debug dễ dàng.
+
+-----------------------------------------------------------
+7. Design Principles
+-----------------------------------------------------------
+
+Mind Visualizer không phải AI.
+
+Mind Visualizer không quyết định.
+
+Mind Visualizer không thay đổi dữ liệu.
+
+Nó chỉ đọc
+và trực quan hóa dữ liệu.
+
+Ưu tiên hình ảnh
+hơn văn bản.
+
+Ưu tiên dễ hiểu
+hơn nhiều thông tin.
+
+-----------------------------------------------------------
+Mind Visualizer Pipeline
+-----------------------------------------------------------
+
+World
+
+↓
+
+Replay
+
+↓
+
+Current Agent State
+
+↓
+
+Mind Visualizer
+
+↓
+
+Developer
+
+-----------------------------------------------------------
+V2 Ideas
+-----------------------------------------------------------
+
+- 3D Mind View
+
+- Live Thought Bubble
+
+- Emotion Animation
+
+- Relationship Graph
+
+- Decision Tree
+
+- Statistics Dashboard
+
+- Multi-Agent View
+
+- Heatmap
+
+- Observation Radius
+
+- Cinematic Mode

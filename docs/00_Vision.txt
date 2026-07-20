@@ -1,0 +1,157 @@
+===========================================================
+01_VISION
+===========================================================
+
+"We are not building smarter NPCs.
+
+We are building a world where stories can emerge."
+
+-----------------------------------------------------------
+What is Island Simulation?
+-----------------------------------------------------------
+
+Island Simulation là một dự án nghiên cứu nhằm xây dựng
+một thế giới số nơi các Agent có thể sinh tồn, học hỏi,
+giao tiếp, ghi nhớ và phát triển thông qua tương tác với
+môi trường và với nhau.
+
+Thay vì viết sẵn cốt truyện hay hành vi,
+chúng tôi muốn những câu chuyện được hình thành
+một cách tự nhiên từ chính thế giới.
+
+-----------------------------------------------------------
+The Vision
+-----------------------------------------------------------
+
+Mục tiêu của dự án không phải tạo ra AI mạnh nhất.
+
+Cũng không phải tạo ra NPC thông minh nhất.
+
+Mục tiêu là tạo ra một thế giới
+mà người xem có thể tin rằng:
+
+"Những Agent này thật sự đang sống."
+
+Khi không có người quan sát,
+thế giới vẫn tiếp tục vận hành.
+
+Các Agent vẫn đưa ra quyết định.
+
+Vẫn phạm sai lầm.
+
+Vẫn học hỏi.
+
+Vẫn thay đổi.
+
+Vẫn tạo nên những câu chuyện của riêng mình.
+
+-----------------------------------------------------------
+Core Philosophy
+-----------------------------------------------------------
+
+The world comes first.
+
+Agent chỉ là một phần của thế giới,
+không phải trung tâm của thế giới.
+
+------------------------------------------------
+
+Stories are not scripted.
+
+Không có kịch bản được viết sẵn.
+
+Mọi câu chuyện đều là kết quả
+của sự tương tác giữa Agent và World.
+
+------------------------------------------------
+
+Memory is selective.
+
+Không phải mọi thứ đều đáng để ghi nhớ.
+
+Chỉ những trải nghiệm có ý nghĩa
+mới tạo nên bản sắc của mỗi Agent.
+
+------------------------------------------------
+
+Reason before action.
+
+Agent không phản ứng một cách máy móc.
+
+Mỗi hành động đều xuất phát
+từ quan sát, ký ức, cảm xúc,
+niềm tin và mục tiêu hiện tại.
+
+------------------------------------------------
+
+Complexity should emerge.
+
+Độ phức tạp không đến từ việc hardcode.
+
+Nó xuất hiện tự nhiên
+từ những quy tắc đơn giản
+và sự tương tác giữa các thành phần.
+
+-----------------------------------------------------------
+Long-term Goal
+-----------------------------------------------------------
+
+Một ngày nào đó,
+người xem có thể mở Simulation lên
+và không còn quan tâm
+đến thuật toán bên dưới.
+
+Họ sẽ quan tâm đến những gì đang diễn ra.
+
+Một Agent mất đi người bạn thân.
+
+Một Agent quyết định rời khỏi nhóm.
+
+Một Agent hy sinh để cứu người khác.
+
+Hay đơn giản là...
+
+Năm Agent ngồi quanh một đống lửa,
+kể cho nhau nghe về hành trình của mình.
+
+Nếu người xem bắt đầu quan tâm
+đến cuộc đời của các Agent,
+thì dự án đã thành công.
+
+-----------------------------------------------------------
+What This Project Is NOT
+-----------------------------------------------------------
+
+Island Simulation không phải:
+
+- Một chatbot.
+
+- Một NPC được viết kịch bản.
+
+- Một game quest tuyến tính.
+
+- Một benchmark cho LLM.
+
+- Một hệ thống chỉ tạo ra câu trả lời.
+
+Đây là một nỗ lực xây dựng
+một thế giới có khả năng tự kể chuyện.
+
+-----------------------------------------------------------
+The Dream
+-----------------------------------------------------------
+
+Chúng tôi không cố gắng tạo ra
+AI giống con người.
+
+Chúng tôi cố gắng tạo ra
+một thế giới đủ sống động,
+để những Agent bên trong
+có thể khiến người xem
+tin rằng họ thật sự đang sống.
+
+
+-----------------------------------------------------------
+If one day five agents choose to sit around a campfire and share their own stories—not because we told them to,
+but because they wanted to—then Island Simulation has achieved its purpose.
+-----------------------------------------------------------

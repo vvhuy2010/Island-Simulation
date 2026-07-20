@@ -1,0 +1,240 @@
+===========================================
+ISLAND SIMULATION
+PROJECT STRUCTURE (V1)
+===========================================
+
+Current Progress
+----------------
+
+✅ Build System
+    - CMake
+    - GCC (MSYS2)
+    - VS Code
+
+✅ ECS Foundation
+    - Entity
+    - EntityManager
+    - World
+    - PositionComponent
+    - HealthComponent
+    - MovementSystem
+    - HealthSystem
+
+===========================================
+Folder Structure
+===========================================
+
+include/
+
+Entity.h
+    Define Entity ID.
+
+EntityManager.h
+    Create and destroy entities.
+
+Position.h
+    Position data (x, y).
+
+Health.h
+    Health data.
+
+PositionComponent.h
+    Store Position components using Sparse Set.
+
+HealthComponent.h
+    Store Health components using Sparse Set.
+
+MovementSystem.h
+    Update entity positions.
+
+HealthSystem.h
+    Update health each simulation tick.
+
+World.h
+    Own every component and system.
+    Entry point of ECS.
+
+Simulation.h
+    Control the simulation loop.
+
+-------------------------------------------
+
+src/
+
+EntityManager.cpp
+
+PositionComponent.cpp
+
+HealthComponent.cpp
+
+MovementSystem.cpp
+
+HealthSystem.cpp
+
+World.cpp
+
+main.cpp
+
+===========================================
+Current ECS
+===========================================
+
+World
+
+├── EntityManager
+
+├── PositionComponent
+
+├── HealthComponent
+
+├── MovementSystem
+
+└── HealthSystem
+
+===========================================
+Implemented Features
+===========================================
+
+EntityManager
+
+✔ Create Entity
+
+✔ Destroy Entity
+
+-------------------------------------------
+
+PositionComponent
+
+✔ Add
+
+✔ Remove
+
+✔ Get
+
+✔ Has
+
+-------------------------------------------
+
+HealthComponent
+
+✔ Add
+
+✔ Remove
+
+✔ Get
+
+✔ Has
+
+-------------------------------------------
+
+World
+
+✔ CreateEntity()
+
+✔ DestroyEntity()
+
+✔ Update()
+
+✔ Position()
+
+✔ Health()
+
+===========================================
+Next Milestones
+===========================================
+
+Phase 2
+--------
+
+Simulation
+
+    - Tick
+    - Time
+    - Game Loop
+
+-------------------------------------------
+
+Movement System
+
+    - Velocity
+    - Move entities every tick
+
+-------------------------------------------
+
+Health System
+
+    - Regeneration
+    - Damage
+    - Death
+
+-------------------------------------------
+
+Need Component
+
+    Hunger
+
+    Thirst
+
+    Energy
+
+-------------------------------------------
+
+Inventory Component
+
+    Item
+
+    Capacity
+
+-------------------------------------------
+
+Resource Component
+
+    Wood
+
+    Stone
+
+    Berry
+
+===========================================
+Future Components
+===========================================
+
+NeedComponent
+
+InventoryComponent
+
+ResourceComponent
+
+RelationshipComponent
+
+MemoryComponent
+
+PersonalityComponent
+
+PlannerComponent
+
+===========================================
+Long-term Goal
+===========================================
+
+Simulation
+
+↓
+
+NPC
+
+↓
+
+Memory
+
+↓
+
+Planning
+
+↓
+
+Communication
+
+↓
+
+Island Civilization

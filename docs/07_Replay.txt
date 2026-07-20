@@ -1,0 +1,236 @@
+===========================================================
+07_REPLAY
+===========================================================
+
+"Replay does not record the world.
+Replay records how the world changes."
+
+(Replay là hệ thống ghi lại toàn bộ các thay đổi
+xảy ra trong Simulation.
+
+Replay không ảnh hưởng tới quá trình chạy của AI.)
+
+-----------------------------------------------------------
+1. Mục tiêu
+-----------------------------------------------------------
+
+Replay ghi lại lịch sử của Simulation.
+
+Mục đích:
+
+- Debug
+
+- Phân tích hành vi AI
+
+- Phát lại Simulation
+
+- Hỗ trợ Mind Visualizer
+
+Replay không điều khiển World.
+
+Replay không thay đổi World.
+
+Replay chỉ ghi lại các Event.
+
+-----------------------------------------------------------
+2. Replay Recorder
+-----------------------------------------------------------
+
+Replay hoạt động như một Listener.
+
+World
+
+↓
+
+Event Bus
+
+↓
+
+Replay Recorder
+
+↓
+
+Replay Log
+
+Replay chỉ lắng nghe Event.
+
+Không can thiệp Simulation.
+
+-----------------------------------------------------------
+3. Event Types
+-----------------------------------------------------------
+
+Replay ghi lại các loại Event.
+
+World Event
+
+- Rain
+
+- Fire
+
+- Earthquake
+
+------------------------
+
+Agent Event
+
+- Walk
+
+- Eat
+
+- Sleep
+
+- Build
+
+- Attack
+
+- Talk
+
+------------------------
+
+Mind Event
+
+- Goal Changed
+
+- Decision Changed
+
+- Emotion Changed
+
+- Relationship Updated
+
+- Memory Added
+
+-----------------------------------------------------------
+4. Timeline
+-----------------------------------------------------------
+
+Mỗi Event đều có:
+
+- Timestamp
+
+- Agent
+
+- Event Type
+
+- Event Data
+
+Ví dụ:
+
+08:31
+
+Agent A
+
+Walk
+
+------------------------
+
+08:35
+
+Agent B
+
+Talk
+
+------------------------
+
+08:40
+
+Wolf Attack
+
+-----------------------------------------------------------
+5. Playback
+-----------------------------------------------------------
+
+Replay hỗ trợ:
+
+Play
+
+Pause
+
+Resume
+
+Fast Forward
+
+Jump to Time
+
+Replay chỉ đọc dữ liệu đã ghi.
+
+Không chạy lại AI.
+
+-----------------------------------------------------------
+6. Filter
+-----------------------------------------------------------
+
+Replay có thể lọc theo:
+
+- Agent
+
+- Event Type
+
+- Time
+
+Ví dụ:
+
+Chỉ xem Agent A.
+
+Chỉ xem Talk.
+
+Chỉ xem Combat.
+
+-----------------------------------------------------------
+7. Design Principles
+-----------------------------------------------------------
+
+Replay không lưu toàn bộ World.
+
+Replay chỉ lưu Event.
+
+Replay càng đơn giản càng tốt.
+
+Replay không ảnh hưởng tới hiệu năng
+của Simulation.
+
+Replay là nền tảng
+cho các công cụ Debug
+và Visualization.
+
+-----------------------------------------------------------
+Replay Pipeline
+-----------------------------------------------------------
+
+World
+
+↓
+
+Event Bus
+
+↓
+
+Replay Recorder
+
+↓
+
+Replay Log
+
+↓
+
+Playback / Debug / Visualizer
+
+-----------------------------------------------------------
+V2 Ideas
+-----------------------------------------------------------
+
+- Event Search
+
+- Statistics
+
+- Export Replay
+
+- Replay Compression
+
+- Multi-Speed Playback
+
+- Event Bookmark
+
+- Replay Comparison
+
+- Simulation Analytics

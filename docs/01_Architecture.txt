@@ -1,0 +1,454 @@
+===========================================================
+01_ARCHITECTURE
+===========================================================
+
+"The goal is not to simulate intelligence.
+The goal is to simulate life."
+
+Architecture defines how every subsystem
+works together to create one living world.
+
+-----------------------------------------------------------
+1. Overview
+-----------------------------------------------------------
+
+Island Simulation gồm ba hệ thống chính.
+
+                    Island Simulation
+
+                           │
+
+      ┌────────────────────┼────────────────────┐
+
+      │                    │                    │
+
+ World Engine         Agent Engine       Developer Tools
+
+Mỗi hệ thống có nhiệm vụ riêng
+và giao tiếp thông qua dữ liệu,
+không gọi trực tiếp logic nội bộ
+của nhau.
+
+-----------------------------------------------------------
+2. World Engine
+-----------------------------------------------------------
+
+World Engine mô phỏng toàn bộ thế giới.
+
+Bao gồm:
+
+- Time
+- Weather
+- Physics
+- Resources
+- Ecology
+- Event System
+- Dungeon Master
+
+World Engine không biết:
+
+- Memory
+- Planner
+- Personality
+- Reasoning
+
+World chỉ cập nhật trạng thái
+của chính nó.
+
+-----------------------------------------------------------
+3. Agent Engine
+-----------------------------------------------------------
+
+Agent Engine mô phỏng
+quá trình nhận thức và hành động.
+
+Mỗi Agent hoạt động độc lập.
+
+Pipeline:
+
+Observe World
+
+↓
+
+Interrupt?
+
+↓
+
+No
+
+↓
+
+Continue Current Action
+
+↓
+
+Finish Tick
+
+------------------------
+
+Yes
+
+↓
+
+Memory Update
+
+↓
+
+Mind Simulation (Reasoning)
+
+↓
+
+Planner
+
+↓
+
+Generate New Action
+
+↓
+
+Execute Action
+
+↓
+
+Finish Tick
+
+Planner chịu trách nhiệm
+giảm số lần gọi LLM.
+
+Agent chỉ suy nghĩ lại khi:
+
+- Goal hoàn thành
+
+- Goal thất bại
+
+- Xuất hiện Event mới
+
+- Có nguy hiểm
+
+- Có Opportunity mới
+
+- Có Interrupt quan trọng
+
+-----------------------------------------------------------
+4. World Tick
+-----------------------------------------------------------
+
+Một Tick của Simulation:
+
+World Update
+
+↓
+
+All Agents Observe
+
+↓
+
+All Agents Update Memory
+
+↓
+
+Interrupted Agents Think
+
+↓
+
+Interrupted Agents Replan
+
+↓
+
+All Agents Execute Action
+
+↓
+
+Resolve World Conflicts
+
+↓
+
+Replay Recording
+
+↓
+
+Mind Visualization
+
+↓
+
+Next Tick
+
+Tất cả Agent
+đều quan sát cùng một World State.
+
+-----------------------------------------------------------
+5. World Conflict Resolution
+-----------------------------------------------------------
+
+Nếu nhiều Action
+tác động lên cùng một đối tượng:
+
+Ví dụ:
+
+Hai Agent cùng nhặt Berry.
+
+Các Action sẽ được đưa vào:
+
+Action Queue
+
+↓
+
+Conflict Resolution
+
+↓
+
+Apply Result
+
+Điều này giúp
+Simulation nhất quán.
+
+-----------------------------------------------------------
+6. Developer Tools
+-----------------------------------------------------------
+
+Developer Tools chỉ đọc dữ liệu.
+
+Bao gồm:
+
+- Replay
+
+- Mind Visualizer
+
+- Evaluation
+
+- Statistics
+
+- Logging
+
+Không được phép
+thay đổi World
+hoặc Agent.
+
+-----------------------------------------------------------
+7. Entity Component System (ECS)
+-----------------------------------------------------------
+
+Mọi đối tượng trong World
+đều là Entity.
+
+Ví dụ:
+
+Tree
+
+Wolf
+
+Fish
+
+Human
+
+Berry
+
+Rock
+
+Mỗi Entity
+được tạo thành từ nhiều Component.
+
+Ví dụ:
+
+Position
+
+Health
+
+Inventory
+
+Memory
+
+Planner
+
+Relationship
+
+Growth
+
+Hunger
+
+System sẽ xử lý
+tất cả Entity
+có cùng Component.
+
+Ví dụ:
+
+Hunger System
+
+↓
+
+Tất cả Entity có Hunger
+
+Growth System
+
+↓
+
+Tất cả Entity có Growth
+
+Planner System
+
+↓
+
+Tất cả Entity có Planner
+
+Điều này giúp
+Engine dễ mở rộng
+và tối ưu hiệu năng.
+
+-----------------------------------------------------------
+8. Module Boundaries
+-----------------------------------------------------------
+
+World Engine
+
+Có thể:
+
+- Update World
+
+- Spawn Resource
+
+- Run Ecology
+
+Không được:
+
+- Thay đổi Agent
+
+----------------------------------------
+
+Memory
+
+Có thể:
+
+- Store Experience
+
+- Recall Experience
+
+Không được:
+
+- Quyết định Action
+
+----------------------------------------
+
+Mind Simulation
+
+Có thể:
+
+- Generate Thoughts
+
+- Evaluate Situation
+
+Không được:
+
+- Thực hiện Action
+
+----------------------------------------
+
+Planner
+
+Có thể:
+
+- Chọn Goal
+
+- Sinh Plan
+
+Không được:
+
+- Sửa World
+
+----------------------------------------
+
+Action
+
+Có thể:
+
+- Tương tác với World
+
+Không được:
+
+- Thay đổi Goal
+
+----------------------------------------
+
+Replay
+
+Read Only
+
+----------------------------------------
+
+Mind Visualizer
+
+Read Only
+
+----------------------------------------
+
+Dungeon Master
+
+Có thể:
+
+- Quan sát World
+
+- Inject Opportunity
+
+Không được:
+
+- Điều khiển Agent
+
+-----------------------------------------------------------
+9. Design Principles
+-----------------------------------------------------------
+
+Single Responsibility
+
+Mỗi module
+chỉ làm một việc.
+
+----------------------------------------
+
+Loose Coupling
+
+Module giao tiếp
+thông qua dữ liệu.
+
+----------------------------------------
+
+Event Driven
+
+Agent chỉ suy nghĩ
+khi có lý do.
+
+Không phải mỗi Tick.
+
+----------------------------------------
+
+Emergence First
+
+Story xuất hiện
+từ tương tác.
+
+Không từ Script.
+
+----------------------------------------
+
+World First
+
+World tồn tại
+độc lập với Agent.
+
+-----------------------------------------------------------
+10. Architecture Philosophy
+-----------------------------------------------------------
+
+The World exists.
+
+Agents live inside the World.
+
+The World changes.
+
+Agents react.
+
+Stories emerge.
+
+No single module
+owns the story.
+
+The story belongs
+to the simulation.

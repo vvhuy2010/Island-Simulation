@@ -1,0 +1,278 @@
+==========================================================
+09_PERSONALITY
+==========================================================
+
+"Personality does not decide what an Agent will do.
+It only influences what an Agent tends to choose."
+
+(Tính cách không quyết định Agent sẽ làm gì.
+Nó chỉ tạo ra xu hướng lựa chọn giữa nhiều khả năng hợp lý.)
+
+----------------------------------------------------------
+1. Mục đích
+----------------------------------------------------------
+
+Personality tồn tại để giải thích vì sao:
+
+Hai Agent
+
+- có cùng khả năng,
+- có cùng thông tin,
+- ở cùng một hoàn cảnh,
+
+nhưng lại đưa ra những quyết định khác nhau.
+
+Personality KHÔNG mô phỏng tâm lý học.
+
+Personality chỉ mô hình hóa những thiên hướng dẫn tới các hành vi khác nhau.
+
+----------------------------------------------------------
+2. Personality gồm những gì?
+----------------------------------------------------------
+
+Personality
+
+├── Background
+└── Traits
+
+Trong phiên bản V1:
+
+- Background là điểm xuất phát của Agent.
+- Traits là các thiên hướng cốt lõi.
+
+Các thành phần khác như:
+
+- Values
+- Preferences
+- Personality Evolution
+
+sẽ được bổ sung ở các phiên bản sau nếu thực sự cần thiết.
+
+----------------------------------------------------------
+3. Background
+----------------------------------------------------------
+
+Background mô tả cuộc sống của Agent trước khi simulation bắt đầu.
+
+Background KHÔNG quyết định hành động.
+
+Background chỉ ảnh hưởng tới:
+
+- Kiến thức ban đầu
+- Kỹ năng ban đầu
+- Một số xu hướng ban đầu
+
+Ví dụ:
+
+Hunter
+- biết săn
+- quen sống trong rừng
+
+Farmer
+- biết trồng trọt
+- quen chăm sóc cây
+
+Doctor
+- biết sơ cứu
+- hiểu sức khỏe
+
+Background chỉ là điểm xuất phát.
+
+Mọi thay đổi sau này đều đến từ trải nghiệm trong simulation.
+
+----------------------------------------------------------
+4. Core Traits
+----------------------------------------------------------
+
+Mỗi Trait không tạo ra hành động.
+
+Trait chỉ tạo Bias trong quá trình lựa chọn.
+
+V1 sử dụng 7 Traits.
+
+--------------------------------------------------
+
+Curiosity
+
+Xu hướng khám phá điều mới.
+
+Ảnh hưởng tới:
+
+- Explore
+- Observe
+- Learning
+
+--------------------------------------------------
+
+Cooperation
+
+Xu hướng hợp tác với Agent khác.
+
+Ảnh hưởng tới:
+
+- Teamwork
+- Sharing
+- Building Together
+
+--------------------------------------------------
+
+Aggression
+
+Xu hướng sử dụng bạo lực khi xảy ra xung đột.
+
+Ảnh hưởng tới:
+
+- Attack
+- Threaten
+- Intimidate
+
+--------------------------------------------------
+
+Empathy
+
+Khả năng quan tâm tới trạng thái của Agent khác.
+
+Ảnh hưởng tới:
+
+- Help
+- Rescue
+- Share
+
+--------------------------------------------------
+
+Greed
+
+Xu hướng tích lũy tài nguyên.
+
+Ảnh hưởng tới:
+
+- Collect
+- Keep
+- Refuse Sharing
+
+--------------------------------------------------
+
+Risk Tolerance
+
+Mức độ chấp nhận rủi ro.
+
+Ảnh hưởng tới:
+
+- Dangerous Exploration
+- Hunting
+- Combat
+
+--------------------------------------------------
+
+Persistence
+
+Mức độ kiên trì khi theo đuổi mục tiêu.
+
+Ảnh hưởng tới:
+
+- Retry
+- Long-term Goals
+- Finish Tasks
+
+----------------------------------------------------------
+5. Personality không quyết định Action
+----------------------------------------------------------
+
+Sai:
+
+Trait
+
+↓
+
+Action
+
+Đúng:
+
+Trait
+
+↓
+
+Decision Bias
+
+↓
+
+Reasoning
+
+↓
+
+Action
+
+Personality chỉ làm thay đổi xu hướng lựa chọn.
+
+LLM vẫn là thành phần đưa ra quyết định cuối cùng.
+
+----------------------------------------------------------
+6. Personality trong Prompt
+----------------------------------------------------------
+
+Engine lưu Trait dưới dạng số.
+
+Ví dụ:
+
+Curiosity = 0.82
+
+Empathy = 0.31
+
+Aggression = 0.55
+
+...
+
+Nhưng khi gửi tới LLM,
+Engine sẽ chuyển thành mô tả tự nhiên.
+
+Ví dụ:
+
+"Bạn là một Agent khá tò mò,
+thường thích khám phá,
+ít khi sử dụng bạo lực
+và có xu hướng hợp tác với người khác."
+
+LLM không cần biết giá trị số.
+
+----------------------------------------------------------
+7. Vai trò trong Simulation
+----------------------------------------------------------
+
+World
+↓
+
+Observation
+↓
+
+Memory
+↓
+
+Personality
+↓
+
+Reasoning
+↓
+
+Goal Selection
+↓
+
+Action
+
+Personality không tạo Goal.
+
+Personality chỉ ảnh hưởng tới cách Agent lựa chọn Goal và Action khi có nhiều phương án hợp lý.
+
+----------------------------------------------------------
+8. Ghi chú
+----------------------------------------------------------
+
+V1 KHÔNG giải quyết:
+
+- Personality Evolution
+- Values
+- Preferences
+- Observable Personality
+
+Các phần này sẽ được thiết kế sau khi hoàn thành toàn bộ Engine.
+
+Mục tiêu của V1 là tạo ra những Agent có hành vi khác nhau nhưng vẫn giữ cho hệ thống đơn giản, dễ mở rộng và dễ debug.
