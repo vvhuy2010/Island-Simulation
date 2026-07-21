@@ -9,10 +9,13 @@ void ObservationSystem::Update(World& world){
     PositionComponent& pos = world.GetPositionComponent();
     ObservationComponent& observationComponent = world.GetObservationComponent();
     ResourceComponent& re = world.GetResourceComponent();
-    for (int target = 0; target < entities.size(); ++target){
-        if (!ag.Has(entities[target])){
-            continue;
-        }
+    // AgentComponent& ag = world.GetAgentComponent();
+
+    const auto& agents = ag.GetEntities();
+    for (Entity target: agents){
+        // if (!ag.Has(entities[target])){
+        //     continue;
+        // }
 
         Observation& observation = observationComponent.Get(entities[target]);
 

@@ -128,29 +128,29 @@ IslandSimulation/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\IslandSimulation.dir\build.make CMakeFiles/IslandSimulation.dir/build
 .PHONY : IslandSimulation/fast
 
-src/AgentComponent.obj: src/AgentComponent.cpp.obj
-.PHONY : src/AgentComponent.obj
+src/ComponentStorage.obj: src/ComponentStorage.cpp.obj
+.PHONY : src/ComponentStorage.obj
 
 # target to build an object file
-src/AgentComponent.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\IslandSimulation.dir\build.make CMakeFiles/IslandSimulation.dir/src/AgentComponent.cpp.obj
-.PHONY : src/AgentComponent.cpp.obj
+src/ComponentStorage.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\IslandSimulation.dir\build.make CMakeFiles/IslandSimulation.dir/src/ComponentStorage.cpp.obj
+.PHONY : src/ComponentStorage.cpp.obj
 
-src/AgentComponent.i: src/AgentComponent.cpp.i
-.PHONY : src/AgentComponent.i
+src/ComponentStorage.i: src/ComponentStorage.cpp.i
+.PHONY : src/ComponentStorage.i
 
 # target to preprocess a source file
-src/AgentComponent.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\IslandSimulation.dir\build.make CMakeFiles/IslandSimulation.dir/src/AgentComponent.cpp.i
-.PHONY : src/AgentComponent.cpp.i
+src/ComponentStorage.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\IslandSimulation.dir\build.make CMakeFiles/IslandSimulation.dir/src/ComponentStorage.cpp.i
+.PHONY : src/ComponentStorage.cpp.i
 
-src/AgentComponent.s: src/AgentComponent.cpp.s
-.PHONY : src/AgentComponent.s
+src/ComponentStorage.s: src/ComponentStorage.cpp.s
+.PHONY : src/ComponentStorage.s
 
 # target to generate assembly for a file
-src/AgentComponent.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\IslandSimulation.dir\build.make CMakeFiles/IslandSimulation.dir/src/AgentComponent.cpp.s
-.PHONY : src/AgentComponent.cpp.s
+src/ComponentStorage.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\IslandSimulation.dir\build.make CMakeFiles/IslandSimulation.dir/src/ComponentStorage.cpp.s
+.PHONY : src/ComponentStorage.cpp.s
 
 src/EntityManager.obj: src/EntityManager.cpp.obj
 .PHONY : src/EntityManager.obj
@@ -175,30 +175,6 @@ src/EntityManager.s: src/EntityManager.cpp.s
 src/EntityManager.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\IslandSimulation.dir\build.make CMakeFiles/IslandSimulation.dir/src/EntityManager.cpp.s
 .PHONY : src/EntityManager.cpp.s
-
-src/HealthComponent.obj: src/HealthComponent.cpp.obj
-.PHONY : src/HealthComponent.obj
-
-# target to build an object file
-src/HealthComponent.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\IslandSimulation.dir\build.make CMakeFiles/IslandSimulation.dir/src/HealthComponent.cpp.obj
-.PHONY : src/HealthComponent.cpp.obj
-
-src/HealthComponent.i: src/HealthComponent.cpp.i
-.PHONY : src/HealthComponent.i
-
-# target to preprocess a source file
-src/HealthComponent.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\IslandSimulation.dir\build.make CMakeFiles/IslandSimulation.dir/src/HealthComponent.cpp.i
-.PHONY : src/HealthComponent.cpp.i
-
-src/HealthComponent.s: src/HealthComponent.cpp.s
-.PHONY : src/HealthComponent.s
-
-# target to generate assembly for a file
-src/HealthComponent.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\IslandSimulation.dir\build.make CMakeFiles/IslandSimulation.dir/src/HealthComponent.cpp.s
-.PHONY : src/HealthComponent.cpp.s
 
 src/HealthSystem.obj: src/HealthSystem.cpp.obj
 .PHONY : src/HealthSystem.obj
@@ -272,30 +248,6 @@ src/Observation.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\IslandSimulation.dir\build.make CMakeFiles/IslandSimulation.dir/src/Observation.cpp.s
 .PHONY : src/Observation.cpp.s
 
-src/ObservationComponent.obj: src/ObservationComponent.cpp.obj
-.PHONY : src/ObservationComponent.obj
-
-# target to build an object file
-src/ObservationComponent.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\IslandSimulation.dir\build.make CMakeFiles/IslandSimulation.dir/src/ObservationComponent.cpp.obj
-.PHONY : src/ObservationComponent.cpp.obj
-
-src/ObservationComponent.i: src/ObservationComponent.cpp.i
-.PHONY : src/ObservationComponent.i
-
-# target to preprocess a source file
-src/ObservationComponent.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\IslandSimulation.dir\build.make CMakeFiles/IslandSimulation.dir/src/ObservationComponent.cpp.i
-.PHONY : src/ObservationComponent.cpp.i
-
-src/ObservationComponent.s: src/ObservationComponent.cpp.s
-.PHONY : src/ObservationComponent.s
-
-# target to generate assembly for a file
-src/ObservationComponent.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\IslandSimulation.dir\build.make CMakeFiles/IslandSimulation.dir/src/ObservationComponent.cpp.s
-.PHONY : src/ObservationComponent.cpp.s
-
 src/ObservationSystem.obj: src/ObservationSystem.cpp.obj
 .PHONY : src/ObservationSystem.obj
 
@@ -320,54 +272,6 @@ src/ObservationSystem.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\IslandSimulation.dir\build.make CMakeFiles/IslandSimulation.dir/src/ObservationSystem.cpp.s
 .PHONY : src/ObservationSystem.cpp.s
 
-src/PositionComponent.obj: src/PositionComponent.cpp.obj
-.PHONY : src/PositionComponent.obj
-
-# target to build an object file
-src/PositionComponent.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\IslandSimulation.dir\build.make CMakeFiles/IslandSimulation.dir/src/PositionComponent.cpp.obj
-.PHONY : src/PositionComponent.cpp.obj
-
-src/PositionComponent.i: src/PositionComponent.cpp.i
-.PHONY : src/PositionComponent.i
-
-# target to preprocess a source file
-src/PositionComponent.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\IslandSimulation.dir\build.make CMakeFiles/IslandSimulation.dir/src/PositionComponent.cpp.i
-.PHONY : src/PositionComponent.cpp.i
-
-src/PositionComponent.s: src/PositionComponent.cpp.s
-.PHONY : src/PositionComponent.s
-
-# target to generate assembly for a file
-src/PositionComponent.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\IslandSimulation.dir\build.make CMakeFiles/IslandSimulation.dir/src/PositionComponent.cpp.s
-.PHONY : src/PositionComponent.cpp.s
-
-src/ResourceComponent.obj: src/ResourceComponent.cpp.obj
-.PHONY : src/ResourceComponent.obj
-
-# target to build an object file
-src/ResourceComponent.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\IslandSimulation.dir\build.make CMakeFiles/IslandSimulation.dir/src/ResourceComponent.cpp.obj
-.PHONY : src/ResourceComponent.cpp.obj
-
-src/ResourceComponent.i: src/ResourceComponent.cpp.i
-.PHONY : src/ResourceComponent.i
-
-# target to preprocess a source file
-src/ResourceComponent.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\IslandSimulation.dir\build.make CMakeFiles/IslandSimulation.dir/src/ResourceComponent.cpp.i
-.PHONY : src/ResourceComponent.cpp.i
-
-src/ResourceComponent.s: src/ResourceComponent.cpp.s
-.PHONY : src/ResourceComponent.s
-
-# target to generate assembly for a file
-src/ResourceComponent.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\IslandSimulation.dir\build.make CMakeFiles/IslandSimulation.dir/src/ResourceComponent.cpp.s
-.PHONY : src/ResourceComponent.cpp.s
-
 src/Simulation.obj: src/Simulation.cpp.obj
 .PHONY : src/Simulation.obj
 
@@ -391,30 +295,6 @@ src/Simulation.s: src/Simulation.cpp.s
 src/Simulation.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\IslandSimulation.dir\build.make CMakeFiles/IslandSimulation.dir/src/Simulation.cpp.s
 .PHONY : src/Simulation.cpp.s
-
-src/VelocityComponent.obj: src/VelocityComponent.cpp.obj
-.PHONY : src/VelocityComponent.obj
-
-# target to build an object file
-src/VelocityComponent.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\IslandSimulation.dir\build.make CMakeFiles/IslandSimulation.dir/src/VelocityComponent.cpp.obj
-.PHONY : src/VelocityComponent.cpp.obj
-
-src/VelocityComponent.i: src/VelocityComponent.cpp.i
-.PHONY : src/VelocityComponent.i
-
-# target to preprocess a source file
-src/VelocityComponent.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\IslandSimulation.dir\build.make CMakeFiles/IslandSimulation.dir/src/VelocityComponent.cpp.i
-.PHONY : src/VelocityComponent.cpp.i
-
-src/VelocityComponent.s: src/VelocityComponent.cpp.s
-.PHONY : src/VelocityComponent.s
-
-# target to generate assembly for a file
-src/VelocityComponent.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\IslandSimulation.dir\build.make CMakeFiles/IslandSimulation.dir/src/VelocityComponent.cpp.s
-.PHONY : src/VelocityComponent.cpp.s
 
 src/World.obj: src/World.cpp.obj
 .PHONY : src/World.obj
@@ -473,15 +353,12 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... IslandSimulation
-	@echo ... src/AgentComponent.obj
-	@echo ... src/AgentComponent.i
-	@echo ... src/AgentComponent.s
+	@echo ... src/ComponentStorage.obj
+	@echo ... src/ComponentStorage.i
+	@echo ... src/ComponentStorage.s
 	@echo ... src/EntityManager.obj
 	@echo ... src/EntityManager.i
 	@echo ... src/EntityManager.s
-	@echo ... src/HealthComponent.obj
-	@echo ... src/HealthComponent.i
-	@echo ... src/HealthComponent.s
 	@echo ... src/HealthSystem.obj
 	@echo ... src/HealthSystem.i
 	@echo ... src/HealthSystem.s
@@ -491,24 +368,12 @@ help:
 	@echo ... src/Observation.obj
 	@echo ... src/Observation.i
 	@echo ... src/Observation.s
-	@echo ... src/ObservationComponent.obj
-	@echo ... src/ObservationComponent.i
-	@echo ... src/ObservationComponent.s
 	@echo ... src/ObservationSystem.obj
 	@echo ... src/ObservationSystem.i
 	@echo ... src/ObservationSystem.s
-	@echo ... src/PositionComponent.obj
-	@echo ... src/PositionComponent.i
-	@echo ... src/PositionComponent.s
-	@echo ... src/ResourceComponent.obj
-	@echo ... src/ResourceComponent.i
-	@echo ... src/ResourceComponent.s
 	@echo ... src/Simulation.obj
 	@echo ... src/Simulation.i
 	@echo ... src/Simulation.s
-	@echo ... src/VelocityComponent.obj
-	@echo ... src/VelocityComponent.i
-	@echo ... src/VelocityComponent.s
 	@echo ... src/World.obj
 	@echo ... src/World.i
 	@echo ... src/World.s

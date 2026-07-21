@@ -337,6 +337,7 @@ CMakeFiles/IslandSimulation.dir/src/ObservationSystem.cpp.obj: \
  C:/msys64/mingw64/include/c++/15.2.0/memory_resource \
  C:/Users/HuyPC/island_simulation/include/PositionComponent.h \
  C:/Users/HuyPC/island_simulation/include/Position.h \
+ C:/Users/HuyPC/island_simulation/include/ComponentStorage.h \
  C:/Users/HuyPC/island_simulation/include/Health.h \
  C:/Users/HuyPC/island_simulation/include/MovementSystem.h \
  C:/Users/HuyPC/island_simulation/include/HealthSystem.h \
