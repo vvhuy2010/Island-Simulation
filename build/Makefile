@@ -128,6 +128,30 @@ IslandSimulation/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\IslandSimulation.dir\build.make CMakeFiles/IslandSimulation.dir/build
 .PHONY : IslandSimulation/fast
 
+src/ActionSystem.obj: src/ActionSystem.cpp.obj
+.PHONY : src/ActionSystem.obj
+
+# target to build an object file
+src/ActionSystem.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\IslandSimulation.dir\build.make CMakeFiles/IslandSimulation.dir/src/ActionSystem.cpp.obj
+.PHONY : src/ActionSystem.cpp.obj
+
+src/ActionSystem.i: src/ActionSystem.cpp.i
+.PHONY : src/ActionSystem.i
+
+# target to preprocess a source file
+src/ActionSystem.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\IslandSimulation.dir\build.make CMakeFiles/IslandSimulation.dir/src/ActionSystem.cpp.i
+.PHONY : src/ActionSystem.cpp.i
+
+src/ActionSystem.s: src/ActionSystem.cpp.s
+.PHONY : src/ActionSystem.s
+
+# target to generate assembly for a file
+src/ActionSystem.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\IslandSimulation.dir\build.make CMakeFiles/IslandSimulation.dir/src/ActionSystem.cpp.s
+.PHONY : src/ActionSystem.cpp.s
+
 src/EntityManager.obj: src/EntityManager.cpp.obj
 .PHONY : src/EntityManager.obj
 
@@ -199,6 +223,30 @@ src/MovementSystem.s: src/MovementSystem.cpp.s
 src/MovementSystem.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\IslandSimulation.dir\build.make CMakeFiles/IslandSimulation.dir/src/MovementSystem.cpp.s
 .PHONY : src/MovementSystem.cpp.s
+
+src/NeedSystem.obj: src/NeedSystem.cpp.obj
+.PHONY : src/NeedSystem.obj
+
+# target to build an object file
+src/NeedSystem.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\IslandSimulation.dir\build.make CMakeFiles/IslandSimulation.dir/src/NeedSystem.cpp.obj
+.PHONY : src/NeedSystem.cpp.obj
+
+src/NeedSystem.i: src/NeedSystem.cpp.i
+.PHONY : src/NeedSystem.i
+
+# target to preprocess a source file
+src/NeedSystem.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\IslandSimulation.dir\build.make CMakeFiles/IslandSimulation.dir/src/NeedSystem.cpp.i
+.PHONY : src/NeedSystem.cpp.i
+
+src/NeedSystem.s: src/NeedSystem.cpp.s
+.PHONY : src/NeedSystem.s
+
+# target to generate assembly for a file
+src/NeedSystem.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\IslandSimulation.dir\build.make CMakeFiles/IslandSimulation.dir/src/NeedSystem.cpp.s
+.PHONY : src/NeedSystem.cpp.s
 
 src/Observation.obj: src/Observation.cpp.obj
 .PHONY : src/Observation.obj
@@ -329,6 +377,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... IslandSimulation
+	@echo ... src/ActionSystem.obj
+	@echo ... src/ActionSystem.i
+	@echo ... src/ActionSystem.s
 	@echo ... src/EntityManager.obj
 	@echo ... src/EntityManager.i
 	@echo ... src/EntityManager.s
@@ -338,6 +389,9 @@ help:
 	@echo ... src/MovementSystem.obj
 	@echo ... src/MovementSystem.i
 	@echo ... src/MovementSystem.s
+	@echo ... src/NeedSystem.obj
+	@echo ... src/NeedSystem.i
+	@echo ... src/NeedSystem.s
 	@echo ... src/Observation.obj
 	@echo ... src/Observation.i
 	@echo ... src/Observation.s

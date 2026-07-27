@@ -1,31 +1,18 @@
-CMakeFiles/IslandSimulation.dir/src/main.cpp.obj: \
- C:\Users\HuyPC\island_simulation\src\main.cpp \
- C:/Users/HuyPC/island_simulation/include/World.h \
- C:/Users/HuyPC/island_simulation/include/EntityManager.h \
- C:/Users/HuyPC/island_simulation/include/Entity.h \
- C:/msys64/mingw64/include/c++/15.2.0/limits \
+CMakeFiles/IslandSimulation.dir/src/NeedSystem.cpp.obj: \
+ C:\Users\HuyPC\island_simulation\src\NeedSystem.cpp \
+ C:/Users/HuyPC/island_simulation/include/NeedComponent.h \
+ C:/Users/HuyPC/island_simulation/include/ComponentStorage.h \
+ C:/msys64/mingw64/include/c++/15.2.0/vector \
+ C:/msys64/mingw64/include/c++/15.2.0/bits/requires_hosted.h \
  C:/msys64/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/c++config.h \
  C:/msys64/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/os_defines.h \
  C:/msys64/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/cpu_defines.h \
  C:/msys64/mingw64/include/c++/15.2.0/pstl/pstl_config.h \
- C:/msys64/mingw64/include/c++/15.2.0/cstdint \
- C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/stdint.h \
- C:/msys64/mingw64/include/stdint.h C:/msys64/mingw64/include/crtdefs.h \
- C:/msys64/mingw64/include/corecrt.h C:/msys64/mingw64/include/_mingw.h \
- C:/msys64/mingw64/include/_mingw_mac.h \
- C:/msys64/mingw64/include/_mingw_secapi.h \
- C:/msys64/mingw64/include/vadefs.h \
- C:/msys64/mingw64/include/sdks/_mingw_ddk.h \
- C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/stddef.h \
- C:/msys64/mingw64/include/stddef.h \
- C:/msys64/mingw64/include/c++/15.2.0/cstddef \
- C:/msys64/mingw64/include/c++/15.2.0/bits/version.h \
- C:/msys64/mingw64/include/c++/15.2.0/vector \
- C:/msys64/mingw64/include/c++/15.2.0/bits/requires_hosted.h \
  C:/msys64/mingw64/include/c++/15.2.0/bits/stl_algobase.h \
  C:/msys64/mingw64/include/c++/15.2.0/bits/functexcept.h \
  C:/msys64/mingw64/include/c++/15.2.0/bits/exception_defines.h \
  C:/msys64/mingw64/include/c++/15.2.0/bits/cpp_type_traits.h \
+ C:/msys64/mingw64/include/c++/15.2.0/bits/version.h \
  C:/msys64/mingw64/include/c++/15.2.0/type_traits \
  C:/msys64/mingw64/include/c++/15.2.0/ext/type_traits.h \
  C:/msys64/mingw64/include/c++/15.2.0/ext/numeric_traits.h \
@@ -64,9 +51,26 @@ CMakeFiles/IslandSimulation.dir/src/main.cpp.obj: \
  C:/msys64/mingw64/include/c++/15.2.0/bits/range_access.h \
  C:/msys64/mingw64/include/c++/15.2.0/bits/vector.tcc \
  C:/msys64/mingw64/include/c++/15.2.0/bits/memory_resource.h \
+ C:/msys64/mingw64/include/c++/15.2.0/cstddef \
+ C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/stddef.h \
+ C:/msys64/mingw64/include/stddef.h C:/msys64/mingw64/include/crtdefs.h \
+ C:/msys64/mingw64/include/corecrt.h C:/msys64/mingw64/include/_mingw.h \
+ C:/msys64/mingw64/include/_mingw_mac.h \
+ C:/msys64/mingw64/include/_mingw_secapi.h \
+ C:/msys64/mingw64/include/vadefs.h \
+ C:/msys64/mingw64/include/sdks/_mingw_ddk.h \
  C:/msys64/mingw64/include/c++/15.2.0/bits/uses_allocator.h \
  C:/msys64/mingw64/include/c++/15.2.0/bits/uses_allocator_args.h \
  C:/msys64/mingw64/include/c++/15.2.0/tuple \
+ C:/Users/HuyPC/island_simulation/include/Entity.h \
+ C:/msys64/mingw64/include/c++/15.2.0/limits \
+ C:/msys64/mingw64/include/c++/15.2.0/cstdint \
+ C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/stdint.h \
+ C:/msys64/mingw64/include/stdint.h \
+ C:/Users/HuyPC/island_simulation/include/Need.h \
+ C:/Users/HuyPC/island_simulation/include/NeedSystem.h \
+ C:/Users/HuyPC/island_simulation/include/World.h \
+ C:/Users/HuyPC/island_simulation/include/EntityManager.h \
  C:/msys64/mingw64/include/c++/15.2.0/stack \
  C:/msys64/mingw64/include/c++/15.2.0/deque \
  C:/msys64/mingw64/include/c++/15.2.0/bits/stl_deque.h \
@@ -157,7 +161,6 @@ CMakeFiles/IslandSimulation.dir/src/main.cpp.obj: \
  C:/msys64/mingw64/include/c++/15.2.0/bits/istream.tcc \
  C:/Users/HuyPC/island_simulation/include/PositionComponent.h \
  C:/Users/HuyPC/island_simulation/include/Position.h \
- C:/Users/HuyPC/island_simulation/include/ComponentStorage.h \
  C:/Users/HuyPC/island_simulation/include/Health.h \
  C:/Users/HuyPC/island_simulation/include/MovementSystem.h \
  C:/Users/HuyPC/island_simulation/include/HealthSystem.h \
@@ -179,8 +182,5 @@ CMakeFiles/IslandSimulation.dir/src/main.cpp.obj: \
  C:/Users/HuyPC/island_simulation/include/Observation.h \
  C:/Users/HuyPC/island_simulation/include/AgentComponent.h \
  C:/Users/HuyPC/island_simulation/include/Agent.h \
- C:/Users/HuyPC/island_simulation/include/NeedComponent.h \
- C:/Users/HuyPC/island_simulation/include/Need.h \
  C:/Users/HuyPC/island_simulation/include/ActionComponent.h \
- C:/Users/HuyPC/island_simulation/include/Action.h \
- C:/Users/HuyPC/island_simulation/include/Simulation.h
+ C:/Users/HuyPC/island_simulation/include/Action.h

@@ -79,6 +79,10 @@ PositionComponent& World::GetPositionComponent(){
     return positionComponent;
 }
 
+ActionComponent& World::GetActionComponent(){
+    return actionComponent;
+}
+
 HealthComponent& World::GetHealthComponent(){
     return healthComponent;
 }
@@ -96,6 +100,9 @@ ObservationComponent& World::GetObservationComponent(){
 }
 EntityManager& World::GetEntityManager(){
     return entityManager;
+}
+NeedComponent& World::GetNeedComponent(){
+    return needComponent;
 }
 Entity World::SpawnHuman(const std::string& name, Position position){
     // World::CreateEntity();a

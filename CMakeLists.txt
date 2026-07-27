@@ -16,4 +16,6 @@ add_executable(
     src/Simulation.cpp
     src/ObservationSystem.cpp
     src/Observation.cpp
+    src/NeedSystem.cpp
+    src/ActionSystem.cpp
 )

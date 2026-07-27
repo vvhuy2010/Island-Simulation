@@ -16,6 +16,8 @@
 #include "Time.h"
 #include <stdio.h>
 #include <stdint.h>
+#include "NeedComponent.h"
+#include "ActionComponent.h"
 
 class World{
 
@@ -32,10 +34,12 @@ public:
     AgentComponent& GetAgentComponent();
     ObservationComponent& GetObservationComponent();
     EntityManager& GetEntityManager();
+    NeedComponent& GetNeedComponent();
+    ActionComponent& GetActionComponent();
 
     // uint64_t GetCurrentTick() const;
     uint64_t GetCurrentTick() const;
-SimulationTime GetCurrentTime() const;
+    SimulationTime GetCurrentTime() const;
 
     //Enity;
 
@@ -75,6 +79,10 @@ private:
     // ResourceComponent& resource();
 
     ObservationComponent observationComponent;
+
+    NeedComponent needComponent;
+
+    ActionComponent actionComponent;
 
     uint64_t currentTick = 0;
     // int GetCurrentTick();

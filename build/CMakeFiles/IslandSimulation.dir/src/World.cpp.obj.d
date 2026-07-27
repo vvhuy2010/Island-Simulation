@@ -179,6 +179,10 @@ CMakeFiles/IslandSimulation.dir/src/World.cpp.obj: \
  C:/Users/HuyPC/island_simulation/include/Observation.h \
  C:/Users/HuyPC/island_simulation/include/AgentComponent.h \
  C:/Users/HuyPC/island_simulation/include/Agent.h \
+ C:/Users/HuyPC/island_simulation/include/NeedComponent.h \
+ C:/Users/HuyPC/island_simulation/include/Need.h \
+ C:/Users/HuyPC/island_simulation/include/ActionComponent.h \
+ C:/Users/HuyPC/island_simulation/include/Action.h \
  C:/Users/HuyPC/island_simulation/include/ObservationSystem.h \
  C:/msys64/mingw64/include/c++/15.2.0/random \
  C:/msys64/mingw64/include/c++/15.2.0/cmath \

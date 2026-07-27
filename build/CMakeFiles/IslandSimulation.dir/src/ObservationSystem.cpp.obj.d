@@ -179,4 +179,8 @@ CMakeFiles/IslandSimulation.dir/src/ObservationSystem.cpp.obj: \
  C:/Users/HuyPC/island_simulation/include/VisibleEntity.h \
  C:/Users/HuyPC/island_simulation/include/Observation.h \
  C:/Users/HuyPC/island_simulation/include/AgentComponent.h \
- C:/Users/HuyPC/island_simulation/include/Agent.h
+ C:/Users/HuyPC/island_simulation/include/Agent.h \
+ C:/Users/HuyPC/island_simulation/include/NeedComponent.h \
+ C:/Users/HuyPC/island_simulation/include/Need.h \
+ C:/Users/HuyPC/island_simulation/include/ActionComponent.h \
+ C:/Users/HuyPC/island_simulation/include/Action.h
