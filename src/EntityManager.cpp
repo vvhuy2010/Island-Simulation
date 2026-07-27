@@ -1,6 +1,8 @@
 #include "EntityManager.h"
 #include "Entity.h"
-#include <bits/stdc++.h>
+#include <vector>
+#include <stack>
+#include <iostream>
 using namespace std;
 #define ll long long
 // using em EntityManager;

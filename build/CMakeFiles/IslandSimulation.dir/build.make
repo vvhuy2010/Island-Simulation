@@ -76,135 +76,120 @@ CMakeFiles/IslandSimulation.dir/src/main.cpp.obj: CMakeFiles/IslandSimulation.di
 CMakeFiles/IslandSimulation.dir/src/main.cpp.obj: C:/Users/HuyPC/island_simulation/src/main.cpp
 CMakeFiles/IslandSimulation.dir/src/main.cpp.obj: CMakeFiles/IslandSimulation.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\HuyPC\island_simulation\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/IslandSimulation.dir/src/main.cpp.obj"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/IslandSimulation.dir/src/main.cpp.obj -MF CMakeFiles\IslandSimulation.dir\src\main.cpp.obj.d -o CMakeFiles\IslandSimulation.dir\src\main.cpp.obj -c C:\Users\HuyPC\island_simulation\src\main.cpp
+	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/IslandSimulation.dir/src/main.cpp.obj -MF CMakeFiles\IslandSimulation.dir\src\main.cpp.obj.d -o CMakeFiles\IslandSimulation.dir\src\main.cpp.obj -c C:\Users\HuyPC\island_simulation\src\main.cpp
 
 CMakeFiles/IslandSimulation.dir/src/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/IslandSimulation.dir/src/main.cpp.i"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\HuyPC\island_simulation\src\main.cpp > CMakeFiles\IslandSimulation.dir\src\main.cpp.i
+	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\HuyPC\island_simulation\src\main.cpp > CMakeFiles\IslandSimulation.dir\src\main.cpp.i
 
 CMakeFiles/IslandSimulation.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/IslandSimulation.dir/src/main.cpp.s"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\HuyPC\island_simulation\src\main.cpp -o CMakeFiles\IslandSimulation.dir\src\main.cpp.s
+	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\HuyPC\island_simulation\src\main.cpp -o CMakeFiles\IslandSimulation.dir\src\main.cpp.s
 
 CMakeFiles/IslandSimulation.dir/src/EntityManager.cpp.obj: CMakeFiles/IslandSimulation.dir/flags.make
 CMakeFiles/IslandSimulation.dir/src/EntityManager.cpp.obj: CMakeFiles/IslandSimulation.dir/includes_CXX.rsp
 CMakeFiles/IslandSimulation.dir/src/EntityManager.cpp.obj: C:/Users/HuyPC/island_simulation/src/EntityManager.cpp
 CMakeFiles/IslandSimulation.dir/src/EntityManager.cpp.obj: CMakeFiles/IslandSimulation.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\HuyPC\island_simulation\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/IslandSimulation.dir/src/EntityManager.cpp.obj"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/IslandSimulation.dir/src/EntityManager.cpp.obj -MF CMakeFiles\IslandSimulation.dir\src\EntityManager.cpp.obj.d -o CMakeFiles\IslandSimulation.dir\src\EntityManager.cpp.obj -c C:\Users\HuyPC\island_simulation\src\EntityManager.cpp
+	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/IslandSimulation.dir/src/EntityManager.cpp.obj -MF CMakeFiles\IslandSimulation.dir\src\EntityManager.cpp.obj.d -o CMakeFiles\IslandSimulation.dir\src\EntityManager.cpp.obj -c C:\Users\HuyPC\island_simulation\src\EntityManager.cpp
 
 CMakeFiles/IslandSimulation.dir/src/EntityManager.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/IslandSimulation.dir/src/EntityManager.cpp.i"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\HuyPC\island_simulation\src\EntityManager.cpp > CMakeFiles\IslandSimulation.dir\src\EntityManager.cpp.i
+	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\HuyPC\island_simulation\src\EntityManager.cpp > CMakeFiles\IslandSimulation.dir\src\EntityManager.cpp.i
 
 CMakeFiles/IslandSimulation.dir/src/EntityManager.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/IslandSimulation.dir/src/EntityManager.cpp.s"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\HuyPC\island_simulation\src\EntityManager.cpp -o CMakeFiles\IslandSimulation.dir\src\EntityManager.cpp.s
+	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\HuyPC\island_simulation\src\EntityManager.cpp -o CMakeFiles\IslandSimulation.dir\src\EntityManager.cpp.s
 
 CMakeFiles/IslandSimulation.dir/src/World.cpp.obj: CMakeFiles/IslandSimulation.dir/flags.make
 CMakeFiles/IslandSimulation.dir/src/World.cpp.obj: CMakeFiles/IslandSimulation.dir/includes_CXX.rsp
 CMakeFiles/IslandSimulation.dir/src/World.cpp.obj: C:/Users/HuyPC/island_simulation/src/World.cpp
 CMakeFiles/IslandSimulation.dir/src/World.cpp.obj: CMakeFiles/IslandSimulation.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\HuyPC\island_simulation\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/IslandSimulation.dir/src/World.cpp.obj"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/IslandSimulation.dir/src/World.cpp.obj -MF CMakeFiles\IslandSimulation.dir\src\World.cpp.obj.d -o CMakeFiles\IslandSimulation.dir\src\World.cpp.obj -c C:\Users\HuyPC\island_simulation\src\World.cpp
+	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/IslandSimulation.dir/src/World.cpp.obj -MF CMakeFiles\IslandSimulation.dir\src\World.cpp.obj.d -o CMakeFiles\IslandSimulation.dir\src\World.cpp.obj -c C:\Users\HuyPC\island_simulation\src\World.cpp
 
 CMakeFiles/IslandSimulation.dir/src/World.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/IslandSimulation.dir/src/World.cpp.i"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\HuyPC\island_simulation\src\World.cpp > CMakeFiles\IslandSimulation.dir\src\World.cpp.i
+	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\HuyPC\island_simulation\src\World.cpp > CMakeFiles\IslandSimulation.dir\src\World.cpp.i
 
 CMakeFiles/IslandSimulation.dir/src/World.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/IslandSimulation.dir/src/World.cpp.s"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\HuyPC\island_simulation\src\World.cpp -o CMakeFiles\IslandSimulation.dir\src\World.cpp.s
+	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\HuyPC\island_simulation\src\World.cpp -o CMakeFiles\IslandSimulation.dir\src\World.cpp.s
 
 CMakeFiles/IslandSimulation.dir/src/MovementSystem.cpp.obj: CMakeFiles/IslandSimulation.dir/flags.make
 CMakeFiles/IslandSimulation.dir/src/MovementSystem.cpp.obj: CMakeFiles/IslandSimulation.dir/includes_CXX.rsp
 CMakeFiles/IslandSimulation.dir/src/MovementSystem.cpp.obj: C:/Users/HuyPC/island_simulation/src/MovementSystem.cpp
 CMakeFiles/IslandSimulation.dir/src/MovementSystem.cpp.obj: CMakeFiles/IslandSimulation.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\HuyPC\island_simulation\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/IslandSimulation.dir/src/MovementSystem.cpp.obj"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/IslandSimulation.dir/src/MovementSystem.cpp.obj -MF CMakeFiles\IslandSimulation.dir\src\MovementSystem.cpp.obj.d -o CMakeFiles\IslandSimulation.dir\src\MovementSystem.cpp.obj -c C:\Users\HuyPC\island_simulation\src\MovementSystem.cpp
+	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/IslandSimulation.dir/src/MovementSystem.cpp.obj -MF CMakeFiles\IslandSimulation.dir\src\MovementSystem.cpp.obj.d -o CMakeFiles\IslandSimulation.dir\src\MovementSystem.cpp.obj -c C:\Users\HuyPC\island_simulation\src\MovementSystem.cpp
 
 CMakeFiles/IslandSimulation.dir/src/MovementSystem.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/IslandSimulation.dir/src/MovementSystem.cpp.i"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\HuyPC\island_simulation\src\MovementSystem.cpp > CMakeFiles\IslandSimulation.dir\src\MovementSystem.cpp.i
+	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\HuyPC\island_simulation\src\MovementSystem.cpp > CMakeFiles\IslandSimulation.dir\src\MovementSystem.cpp.i
 
 CMakeFiles/IslandSimulation.dir/src/MovementSystem.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/IslandSimulation.dir/src/MovementSystem.cpp.s"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\HuyPC\island_simulation\src\MovementSystem.cpp -o CMakeFiles\IslandSimulation.dir\src\MovementSystem.cpp.s
+	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\HuyPC\island_simulation\src\MovementSystem.cpp -o CMakeFiles\IslandSimulation.dir\src\MovementSystem.cpp.s
 
 CMakeFiles/IslandSimulation.dir/src/HealthSystem.cpp.obj: CMakeFiles/IslandSimulation.dir/flags.make
 CMakeFiles/IslandSimulation.dir/src/HealthSystem.cpp.obj: CMakeFiles/IslandSimulation.dir/includes_CXX.rsp
 CMakeFiles/IslandSimulation.dir/src/HealthSystem.cpp.obj: C:/Users/HuyPC/island_simulation/src/HealthSystem.cpp
 CMakeFiles/IslandSimulation.dir/src/HealthSystem.cpp.obj: CMakeFiles/IslandSimulation.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\HuyPC\island_simulation\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/IslandSimulation.dir/src/HealthSystem.cpp.obj"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/IslandSimulation.dir/src/HealthSystem.cpp.obj -MF CMakeFiles\IslandSimulation.dir\src\HealthSystem.cpp.obj.d -o CMakeFiles\IslandSimulation.dir\src\HealthSystem.cpp.obj -c C:\Users\HuyPC\island_simulation\src\HealthSystem.cpp
+	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/IslandSimulation.dir/src/HealthSystem.cpp.obj -MF CMakeFiles\IslandSimulation.dir\src\HealthSystem.cpp.obj.d -o CMakeFiles\IslandSimulation.dir\src\HealthSystem.cpp.obj -c C:\Users\HuyPC\island_simulation\src\HealthSystem.cpp
 
 CMakeFiles/IslandSimulation.dir/src/HealthSystem.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/IslandSimulation.dir/src/HealthSystem.cpp.i"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\HuyPC\island_simulation\src\HealthSystem.cpp > CMakeFiles\IslandSimulation.dir\src\HealthSystem.cpp.i
+	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\HuyPC\island_simulation\src\HealthSystem.cpp > CMakeFiles\IslandSimulation.dir\src\HealthSystem.cpp.i
 
 CMakeFiles/IslandSimulation.dir/src/HealthSystem.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/IslandSimulation.dir/src/HealthSystem.cpp.s"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\HuyPC\island_simulation\src\HealthSystem.cpp -o CMakeFiles\IslandSimulation.dir\src\HealthSystem.cpp.s
+	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\HuyPC\island_simulation\src\HealthSystem.cpp -o CMakeFiles\IslandSimulation.dir\src\HealthSystem.cpp.s
 
 CMakeFiles/IslandSimulation.dir/src/Simulation.cpp.obj: CMakeFiles/IslandSimulation.dir/flags.make
 CMakeFiles/IslandSimulation.dir/src/Simulation.cpp.obj: CMakeFiles/IslandSimulation.dir/includes_CXX.rsp
 CMakeFiles/IslandSimulation.dir/src/Simulation.cpp.obj: C:/Users/HuyPC/island_simulation/src/Simulation.cpp
 CMakeFiles/IslandSimulation.dir/src/Simulation.cpp.obj: CMakeFiles/IslandSimulation.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\HuyPC\island_simulation\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/IslandSimulation.dir/src/Simulation.cpp.obj"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/IslandSimulation.dir/src/Simulation.cpp.obj -MF CMakeFiles\IslandSimulation.dir\src\Simulation.cpp.obj.d -o CMakeFiles\IslandSimulation.dir\src\Simulation.cpp.obj -c C:\Users\HuyPC\island_simulation\src\Simulation.cpp
+	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/IslandSimulation.dir/src/Simulation.cpp.obj -MF CMakeFiles\IslandSimulation.dir\src\Simulation.cpp.obj.d -o CMakeFiles\IslandSimulation.dir\src\Simulation.cpp.obj -c C:\Users\HuyPC\island_simulation\src\Simulation.cpp
 
 CMakeFiles/IslandSimulation.dir/src/Simulation.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/IslandSimulation.dir/src/Simulation.cpp.i"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\HuyPC\island_simulation\src\Simulation.cpp > CMakeFiles\IslandSimulation.dir\src\Simulation.cpp.i
+	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\HuyPC\island_simulation\src\Simulation.cpp > CMakeFiles\IslandSimulation.dir\src\Simulation.cpp.i
 
 CMakeFiles/IslandSimulation.dir/src/Simulation.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/IslandSimulation.dir/src/Simulation.cpp.s"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\HuyPC\island_simulation\src\Simulation.cpp -o CMakeFiles\IslandSimulation.dir\src\Simulation.cpp.s
+	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\HuyPC\island_simulation\src\Simulation.cpp -o CMakeFiles\IslandSimulation.dir\src\Simulation.cpp.s
 
 CMakeFiles/IslandSimulation.dir/src/ObservationSystem.cpp.obj: CMakeFiles/IslandSimulation.dir/flags.make
 CMakeFiles/IslandSimulation.dir/src/ObservationSystem.cpp.obj: CMakeFiles/IslandSimulation.dir/includes_CXX.rsp
 CMakeFiles/IslandSimulation.dir/src/ObservationSystem.cpp.obj: C:/Users/HuyPC/island_simulation/src/ObservationSystem.cpp
 CMakeFiles/IslandSimulation.dir/src/ObservationSystem.cpp.obj: CMakeFiles/IslandSimulation.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\HuyPC\island_simulation\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/IslandSimulation.dir/src/ObservationSystem.cpp.obj"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/IslandSimulation.dir/src/ObservationSystem.cpp.obj -MF CMakeFiles\IslandSimulation.dir\src\ObservationSystem.cpp.obj.d -o CMakeFiles\IslandSimulation.dir\src\ObservationSystem.cpp.obj -c C:\Users\HuyPC\island_simulation\src\ObservationSystem.cpp
+	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/IslandSimulation.dir/src/ObservationSystem.cpp.obj -MF CMakeFiles\IslandSimulation.dir\src\ObservationSystem.cpp.obj.d -o CMakeFiles\IslandSimulation.dir\src\ObservationSystem.cpp.obj -c C:\Users\HuyPC\island_simulation\src\ObservationSystem.cpp
 
 CMakeFiles/IslandSimulation.dir/src/ObservationSystem.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/IslandSimulation.dir/src/ObservationSystem.cpp.i"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\HuyPC\island_simulation\src\ObservationSystem.cpp > CMakeFiles\IslandSimulation.dir\src\ObservationSystem.cpp.i
+	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\HuyPC\island_simulation\src\ObservationSystem.cpp > CMakeFiles\IslandSimulation.dir\src\ObservationSystem.cpp.i
 
 CMakeFiles/IslandSimulation.dir/src/ObservationSystem.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/IslandSimulation.dir/src/ObservationSystem.cpp.s"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\HuyPC\island_simulation\src\ObservationSystem.cpp -o CMakeFiles\IslandSimulation.dir\src\ObservationSystem.cpp.s
+	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\HuyPC\island_simulation\src\ObservationSystem.cpp -o CMakeFiles\IslandSimulation.dir\src\ObservationSystem.cpp.s
 
 CMakeFiles/IslandSimulation.dir/src/Observation.cpp.obj: CMakeFiles/IslandSimulation.dir/flags.make
 CMakeFiles/IslandSimulation.dir/src/Observation.cpp.obj: CMakeFiles/IslandSimulation.dir/includes_CXX.rsp
 CMakeFiles/IslandSimulation.dir/src/Observation.cpp.obj: C:/Users/HuyPC/island_simulation/src/Observation.cpp
 CMakeFiles/IslandSimulation.dir/src/Observation.cpp.obj: CMakeFiles/IslandSimulation.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\HuyPC\island_simulation\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/IslandSimulation.dir/src/Observation.cpp.obj"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/IslandSimulation.dir/src/Observation.cpp.obj -MF CMakeFiles\IslandSimulation.dir\src\Observation.cpp.obj.d -o CMakeFiles\IslandSimulation.dir\src\Observation.cpp.obj -c C:\Users\HuyPC\island_simulation\src\Observation.cpp
+	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/IslandSimulation.dir/src/Observation.cpp.obj -MF CMakeFiles\IslandSimulation.dir\src\Observation.cpp.obj.d -o CMakeFiles\IslandSimulation.dir\src\Observation.cpp.obj -c C:\Users\HuyPC\island_simulation\src\Observation.cpp
 
 CMakeFiles/IslandSimulation.dir/src/Observation.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/IslandSimulation.dir/src/Observation.cpp.i"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\HuyPC\island_simulation\src\Observation.cpp > CMakeFiles\IslandSimulation.dir\src\Observation.cpp.i
+	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\HuyPC\island_simulation\src\Observation.cpp > CMakeFiles\IslandSimulation.dir\src\Observation.cpp.i
 
 CMakeFiles/IslandSimulation.dir/src/Observation.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/IslandSimulation.dir/src/Observation.cpp.s"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\HuyPC\island_simulation\src\Observation.cpp -o CMakeFiles\IslandSimulation.dir\src\Observation.cpp.s
-
-CMakeFiles/IslandSimulation.dir/src/ComponentStorage.cpp.obj: CMakeFiles/IslandSimulation.dir/flags.make
-CMakeFiles/IslandSimulation.dir/src/ComponentStorage.cpp.obj: CMakeFiles/IslandSimulation.dir/includes_CXX.rsp
-CMakeFiles/IslandSimulation.dir/src/ComponentStorage.cpp.obj: C:/Users/HuyPC/island_simulation/src/ComponentStorage.cpp
-CMakeFiles/IslandSimulation.dir/src/ComponentStorage.cpp.obj: CMakeFiles/IslandSimulation.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\HuyPC\island_simulation\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/IslandSimulation.dir/src/ComponentStorage.cpp.obj"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/IslandSimulation.dir/src/ComponentStorage.cpp.obj -MF CMakeFiles\IslandSimulation.dir\src\ComponentStorage.cpp.obj.d -o CMakeFiles\IslandSimulation.dir\src\ComponentStorage.cpp.obj -c C:\Users\HuyPC\island_simulation\src\ComponentStorage.cpp
-
-CMakeFiles/IslandSimulation.dir/src/ComponentStorage.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/IslandSimulation.dir/src/ComponentStorage.cpp.i"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\HuyPC\island_simulation\src\ComponentStorage.cpp > CMakeFiles\IslandSimulation.dir\src\ComponentStorage.cpp.i
-
-CMakeFiles/IslandSimulation.dir/src/ComponentStorage.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/IslandSimulation.dir/src/ComponentStorage.cpp.s"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\HuyPC\island_simulation\src\ComponentStorage.cpp -o CMakeFiles\IslandSimulation.dir\src\ComponentStorage.cpp.s
+	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\HuyPC\island_simulation\src\Observation.cpp -o CMakeFiles\IslandSimulation.dir\src\Observation.cpp.s
 
 # Object files for target IslandSimulation
 IslandSimulation_OBJECTS = \
@@ -215,8 +200,7 @@ IslandSimulation_OBJECTS = \
 "CMakeFiles/IslandSimulation.dir/src/HealthSystem.cpp.obj" \
 "CMakeFiles/IslandSimulation.dir/src/Simulation.cpp.obj" \
 "CMakeFiles/IslandSimulation.dir/src/ObservationSystem.cpp.obj" \
-"CMakeFiles/IslandSimulation.dir/src/Observation.cpp.obj" \
-"CMakeFiles/IslandSimulation.dir/src/ComponentStorage.cpp.obj"
+"CMakeFiles/IslandSimulation.dir/src/Observation.cpp.obj"
 
 # External object files for target IslandSimulation
 IslandSimulation_EXTERNAL_OBJECTS =
@@ -229,12 +213,11 @@ IslandSimulation.exe: CMakeFiles/IslandSimulation.dir/src/HealthSystem.cpp.obj
 IslandSimulation.exe: CMakeFiles/IslandSimulation.dir/src/Simulation.cpp.obj
 IslandSimulation.exe: CMakeFiles/IslandSimulation.dir/src/ObservationSystem.cpp.obj
 IslandSimulation.exe: CMakeFiles/IslandSimulation.dir/src/Observation.cpp.obj
-IslandSimulation.exe: CMakeFiles/IslandSimulation.dir/src/ComponentStorage.cpp.obj
 IslandSimulation.exe: CMakeFiles/IslandSimulation.dir/build.make
 IslandSimulation.exe: CMakeFiles/IslandSimulation.dir/linkLibs.rsp
 IslandSimulation.exe: CMakeFiles/IslandSimulation.dir/objects1.rsp
 IslandSimulation.exe: CMakeFiles/IslandSimulation.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\HuyPC\island_simulation\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable IslandSimulation.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\HuyPC\island_simulation\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable IslandSimulation.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\IslandSimulation.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

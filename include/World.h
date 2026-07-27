@@ -13,6 +13,7 @@
 #include "ObservationComponent.h"
 #include "AgentComponent.h"
 // #include <cstdint>
+#include "Time.h"
 #include <stdio.h>
 #include <stdint.h>
 
@@ -32,7 +33,9 @@ public:
     ObservationComponent& GetObservationComponent();
     EntityManager& GetEntityManager();
 
+    // uint64_t GetCurrentTick() const;
     uint64_t GetCurrentTick() const;
+SimulationTime GetCurrentTime() const;
 
     //Enity;
 

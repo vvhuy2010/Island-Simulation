@@ -8,7 +8,6 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "C:/Users/HuyPC/island_simulation/src/ComponentStorage.cpp" "CMakeFiles/IslandSimulation.dir/src/ComponentStorage.cpp.obj" "gcc" "CMakeFiles/IslandSimulation.dir/src/ComponentStorage.cpp.obj.d"
   "C:/Users/HuyPC/island_simulation/src/EntityManager.cpp" "CMakeFiles/IslandSimulation.dir/src/EntityManager.cpp.obj" "gcc" "CMakeFiles/IslandSimulation.dir/src/EntityManager.cpp.obj.d"
   "C:/Users/HuyPC/island_simulation/src/HealthSystem.cpp" "CMakeFiles/IslandSimulation.dir/src/HealthSystem.cpp.obj" "gcc" "CMakeFiles/IslandSimulation.dir/src/HealthSystem.cpp.obj.d"
   "C:/Users/HuyPC/island_simulation/src/MovementSystem.cpp" "CMakeFiles/IslandSimulation.dir/src/MovementSystem.cpp.obj" "gcc" "CMakeFiles/IslandSimulation.dir/src/MovementSystem.cpp.obj.d"

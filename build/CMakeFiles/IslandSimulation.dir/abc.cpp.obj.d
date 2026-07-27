@@ -1,6 +1,5 @@
-CMakeFiles/IslandSimulation.dir/src/ObservationSystem.cpp.obj: \
- C:\Users\HuyPC\island_simulation\src\ObservationSystem.cpp \
- C:/Users/HuyPC/island_simulation/include/ObservationSystem.h \
+CMakeFiles/IslandSimulation.dir/abc.cpp.obj: \
+ C:\Users\HuyPC\island_simulation\abc.cpp \
  C:/Users/HuyPC/island_simulation/include/World.h \
  C:/Users/HuyPC/island_simulation/include/EntityManager.h \
  C:/Users/HuyPC/island_simulation/include/Entity.h \

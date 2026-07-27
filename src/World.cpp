@@ -9,6 +9,31 @@ uint64_t World::GetCurrentTick() const
     return currentTick;
 }
 
+SimulationTime World::GetCurrentTime() const
+{
+    uint64_t remainingTicks = currentTick;
+
+    uint64_t day = remainingTicks / Time::TICKS_PER_DAY;
+    remainingTicks %= Time::TICKS_PER_DAY;
+
+    uint64_t hour = remainingTicks / Time::TICKS_PER_HOUR;
+    remainingTicks %= Time::TICKS_PER_HOUR;
+
+    uint64_t minute = remainingTicks / Time::TICKS_PER_MINUTE;
+    remainingTicks %= Time::TICKS_PER_MINUTE;
+
+    uint64_t second = remainingTicks / Time::TICKS_PER_SECOND;
+    remainingTicks %= Time::TICKS_PER_SECOND;
+
+    return {
+        day,
+        hour,
+        minute,
+        second,
+        remainingTicks
+    };
+}
+
 
 Entity World::CreateEntity(){
     return entityManager.Create();

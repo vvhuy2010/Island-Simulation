@@ -128,30 +128,6 @@ IslandSimulation/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\IslandSimulation.dir\build.make CMakeFiles/IslandSimulation.dir/build
 .PHONY : IslandSimulation/fast
 
-src/ComponentStorage.obj: src/ComponentStorage.cpp.obj
-.PHONY : src/ComponentStorage.obj
-
-# target to build an object file
-src/ComponentStorage.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\IslandSimulation.dir\build.make CMakeFiles/IslandSimulation.dir/src/ComponentStorage.cpp.obj
-.PHONY : src/ComponentStorage.cpp.obj
-
-src/ComponentStorage.i: src/ComponentStorage.cpp.i
-.PHONY : src/ComponentStorage.i
-
-# target to preprocess a source file
-src/ComponentStorage.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\IslandSimulation.dir\build.make CMakeFiles/IslandSimulation.dir/src/ComponentStorage.cpp.i
-.PHONY : src/ComponentStorage.cpp.i
-
-src/ComponentStorage.s: src/ComponentStorage.cpp.s
-.PHONY : src/ComponentStorage.s
-
-# target to generate assembly for a file
-src/ComponentStorage.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\IslandSimulation.dir\build.make CMakeFiles/IslandSimulation.dir/src/ComponentStorage.cpp.s
-.PHONY : src/ComponentStorage.cpp.s
-
 src/EntityManager.obj: src/EntityManager.cpp.obj
 .PHONY : src/EntityManager.obj
 
@@ -353,9 +329,6 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... IslandSimulation
-	@echo ... src/ComponentStorage.obj
-	@echo ... src/ComponentStorage.i
-	@echo ... src/ComponentStorage.s
 	@echo ... src/EntityManager.obj
 	@echo ... src/EntityManager.i
 	@echo ... src/EntityManager.s

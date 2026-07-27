@@ -1,6 +1,4 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/IslandSimulation.dir/src/ComponentStorage.cpp.obj"
-  "CMakeFiles/IslandSimulation.dir/src/ComponentStorage.cpp.obj.d"
   "CMakeFiles/IslandSimulation.dir/src/EntityManager.cpp.obj"
   "CMakeFiles/IslandSimulation.dir/src/EntityManager.cpp.obj.d"
   "CMakeFiles/IslandSimulation.dir/src/HealthSystem.cpp.obj"
