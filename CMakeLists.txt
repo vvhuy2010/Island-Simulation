@@ -18,4 +18,7 @@ add_executable(
     src/Observation.cpp
     src/NeedSystem.cpp
     src/ActionSystem.cpp
+    src/InventorySystem.cpp
+    src/PlannerSystem.cpp
+    src/DecisionSystem.cpp
 )

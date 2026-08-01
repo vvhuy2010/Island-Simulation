@@ -182,5 +182,12 @@ CMakeFiles/IslandSimulation.dir/src/ObservationSystem.cpp.obj: \
  C:/Users/HuyPC/island_simulation/include/Agent.h \
  C:/Users/HuyPC/island_simulation/include/NeedComponent.h \
  C:/Users/HuyPC/island_simulation/include/Need.h \
+ C:/Users/HuyPC/island_simulation/include/InventoryComponent.h \
+ C:/Users/HuyPC/island_simulation/include/Inventory.h \
+ C:/Users/HuyPC/island_simulation/include/Item.h \
  C:/Users/HuyPC/island_simulation/include/ActionComponent.h \
- C:/Users/HuyPC/island_simulation/include/Action.h
+ C:/Users/HuyPC/island_simulation/include/Action.h \
+ C:/Users/HuyPC/island_simulation/include/ActionType.h \
+ C:/Users/HuyPC/island_simulation/include/PlannerComponent.h \
+ C:/Users/HuyPC/island_simulation/include/Planner.h \
+ C:/Users/HuyPC/island_simulation/include/Plan.h

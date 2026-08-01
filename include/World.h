@@ -17,7 +17,9 @@
 #include <stdio.h>
 #include <stdint.h>
 #include "NeedComponent.h"
+#include "InventoryComponent.h"
 #include "ActionComponent.h"
+#include "PlannerComponent.h"
 
 class World{
 
@@ -36,6 +38,8 @@ public:
     EntityManager& GetEntityManager();
     NeedComponent& GetNeedComponent();
     ActionComponent& GetActionComponent();
+    InventoryComponent& GetInventoryComponent();
+    PlannerComponent& GetPlannerComponent();
 
     // uint64_t GetCurrentTick() const;
     uint64_t GetCurrentTick() const;
@@ -80,9 +84,13 @@ private:
 
     ObservationComponent observationComponent;
 
+    InventoryComponent inventoryComponent;
+
     NeedComponent needComponent;
 
     ActionComponent actionComponent;
+
+    PlannerComponent plannerComponent;
 
     uint64_t currentTick = 0;
     // int GetCurrentTick();

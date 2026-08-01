@@ -104,28 +104,31 @@ EntityManager& World::GetEntityManager(){
 NeedComponent& World::GetNeedComponent(){
     return needComponent;
 }
-Entity World::SpawnHuman(const std::string& name, Position position){
-    // World::CreateEntity();a
-    // World world;
+PlannerComponent& World::GetPlannerComponent(){
+    return plannerComponent;
+}
+InventoryComponent& World::GetInventoryComponent(){
+    return inventoryComponent;
+}
+Entity World::SpawnHuman(const std::string& name, Position position)
+{
     Entity entity = CreateEntity();
-    // CreateEntity();
 
-    Agent agent;
-    agent.name = name;
+    agentComponent.Add(entity, Agent{name});
 
-    agentComponent.Add(entity, agent);
     positionComponent.Add(entity, position);
-    // world.GetPositionComponent().Add(name, position);
-    Observation observation;
-    // ObservationComponent observationComponent;
-    observationComponent.Add(entity, observation);
 
-    Health health;
+    healthComponent.Add(entity, Health{});
 
-    health.currentHealth = 100;
-    health.maxHealth = 100;
+    needComponent.Add(entity, Need{});
 
-    healthComponent.Add(entity, health);
+    inventoryComponent.Add(entity, Inventory{});
+
+    plannerComponent.Add(entity, Planner{});
+
+    actionComponent.Add(entity, Action{});
+
+    observationComponent.Add(entity, Observation{});
 
     return entity;
 }

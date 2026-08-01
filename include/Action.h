@@ -3,18 +3,13 @@
 #include "Entity.h"
 #include "Position.h"
 #include "Time.h"
+#include "ActionType.h"
 
-enum class ActionType{
-    Idle,
-    Move,
-    Sleep,
-    Eat,
-    Drink
-};
+struct Action
+{
+    ActionType type = ActionType::Idle;
+    uint64_t RemainingTicks = 0;
 
-struct Action{
-    ActionType type;
-    Entity TargetEntity;
-    Position TargetPosition;
-    uint64_t RemainingTicks;
+    Entity TargetEntity = INVALID_ENTITY;
+    Position TargetPosition = {INVALID_POS, INVALID_POS};
 };

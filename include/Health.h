@@ -2,6 +2,6 @@
 
 struct Health
 {
-    float currentHealth;
-    float maxHealth;
+    float currentHealth = 100;
+    float maxHealth = 100;
 };

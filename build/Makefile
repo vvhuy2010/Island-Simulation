@@ -152,6 +152,30 @@ src/ActionSystem.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\IslandSimulation.dir\build.make CMakeFiles/IslandSimulation.dir/src/ActionSystem.cpp.s
 .PHONY : src/ActionSystem.cpp.s
 
+src/DecisionSystem.obj: src/DecisionSystem.cpp.obj
+.PHONY : src/DecisionSystem.obj
+
+# target to build an object file
+src/DecisionSystem.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\IslandSimulation.dir\build.make CMakeFiles/IslandSimulation.dir/src/DecisionSystem.cpp.obj
+.PHONY : src/DecisionSystem.cpp.obj
+
+src/DecisionSystem.i: src/DecisionSystem.cpp.i
+.PHONY : src/DecisionSystem.i
+
+# target to preprocess a source file
+src/DecisionSystem.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\IslandSimulation.dir\build.make CMakeFiles/IslandSimulation.dir/src/DecisionSystem.cpp.i
+.PHONY : src/DecisionSystem.cpp.i
+
+src/DecisionSystem.s: src/DecisionSystem.cpp.s
+.PHONY : src/DecisionSystem.s
+
+# target to generate assembly for a file
+src/DecisionSystem.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\IslandSimulation.dir\build.make CMakeFiles/IslandSimulation.dir/src/DecisionSystem.cpp.s
+.PHONY : src/DecisionSystem.cpp.s
+
 src/EntityManager.obj: src/EntityManager.cpp.obj
 .PHONY : src/EntityManager.obj
 
@@ -199,6 +223,30 @@ src/HealthSystem.s: src/HealthSystem.cpp.s
 src/HealthSystem.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\IslandSimulation.dir\build.make CMakeFiles/IslandSimulation.dir/src/HealthSystem.cpp.s
 .PHONY : src/HealthSystem.cpp.s
+
+src/InventorySystem.obj: src/InventorySystem.cpp.obj
+.PHONY : src/InventorySystem.obj
+
+# target to build an object file
+src/InventorySystem.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\IslandSimulation.dir\build.make CMakeFiles/IslandSimulation.dir/src/InventorySystem.cpp.obj
+.PHONY : src/InventorySystem.cpp.obj
+
+src/InventorySystem.i: src/InventorySystem.cpp.i
+.PHONY : src/InventorySystem.i
+
+# target to preprocess a source file
+src/InventorySystem.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\IslandSimulation.dir\build.make CMakeFiles/IslandSimulation.dir/src/InventorySystem.cpp.i
+.PHONY : src/InventorySystem.cpp.i
+
+src/InventorySystem.s: src/InventorySystem.cpp.s
+.PHONY : src/InventorySystem.s
+
+# target to generate assembly for a file
+src/InventorySystem.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\IslandSimulation.dir\build.make CMakeFiles/IslandSimulation.dir/src/InventorySystem.cpp.s
+.PHONY : src/InventorySystem.cpp.s
 
 src/MovementSystem.obj: src/MovementSystem.cpp.obj
 .PHONY : src/MovementSystem.obj
@@ -296,6 +344,30 @@ src/ObservationSystem.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\IslandSimulation.dir\build.make CMakeFiles/IslandSimulation.dir/src/ObservationSystem.cpp.s
 .PHONY : src/ObservationSystem.cpp.s
 
+src/PlannerSystem.obj: src/PlannerSystem.cpp.obj
+.PHONY : src/PlannerSystem.obj
+
+# target to build an object file
+src/PlannerSystem.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\IslandSimulation.dir\build.make CMakeFiles/IslandSimulation.dir/src/PlannerSystem.cpp.obj
+.PHONY : src/PlannerSystem.cpp.obj
+
+src/PlannerSystem.i: src/PlannerSystem.cpp.i
+.PHONY : src/PlannerSystem.i
+
+# target to preprocess a source file
+src/PlannerSystem.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\IslandSimulation.dir\build.make CMakeFiles/IslandSimulation.dir/src/PlannerSystem.cpp.i
+.PHONY : src/PlannerSystem.cpp.i
+
+src/PlannerSystem.s: src/PlannerSystem.cpp.s
+.PHONY : src/PlannerSystem.s
+
+# target to generate assembly for a file
+src/PlannerSystem.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\IslandSimulation.dir\build.make CMakeFiles/IslandSimulation.dir/src/PlannerSystem.cpp.s
+.PHONY : src/PlannerSystem.cpp.s
+
 src/Simulation.obj: src/Simulation.cpp.obj
 .PHONY : src/Simulation.obj
 
@@ -380,12 +452,18 @@ help:
 	@echo ... src/ActionSystem.obj
 	@echo ... src/ActionSystem.i
 	@echo ... src/ActionSystem.s
+	@echo ... src/DecisionSystem.obj
+	@echo ... src/DecisionSystem.i
+	@echo ... src/DecisionSystem.s
 	@echo ... src/EntityManager.obj
 	@echo ... src/EntityManager.i
 	@echo ... src/EntityManager.s
 	@echo ... src/HealthSystem.obj
 	@echo ... src/HealthSystem.i
 	@echo ... src/HealthSystem.s
+	@echo ... src/InventorySystem.obj
+	@echo ... src/InventorySystem.i
+	@echo ... src/InventorySystem.s
 	@echo ... src/MovementSystem.obj
 	@echo ... src/MovementSystem.i
 	@echo ... src/MovementSystem.s
@@ -398,6 +476,9 @@ help:
 	@echo ... src/ObservationSystem.obj
 	@echo ... src/ObservationSystem.i
 	@echo ... src/ObservationSystem.s
+	@echo ... src/PlannerSystem.obj
+	@echo ... src/PlannerSystem.i
+	@echo ... src/PlannerSystem.s
 	@echo ... src/Simulation.obj
 	@echo ... src/Simulation.i
 	@echo ... src/Simulation.s
