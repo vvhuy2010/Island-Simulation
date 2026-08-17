@@ -19,8 +19,10 @@ void DecisionSystem::Decide(Entity entity, World& world){
     for (const auto& entityPlan : planner.planner){
         if (entityPlan.Priority > priorityMax){
             priorityMax = entityPlan.Priority;
-            // plan.action = entityPlan.action;
-            bestPlan = &entityPlan;
+
+            plan.action = entityPlan.action;
+            plan.TargetEntity = entityPlan.TargetEntity;
+            plan.TargetPosition = entityPlan.TargetPosition;
         }
     }
 
@@ -28,7 +30,11 @@ void DecisionSystem::Decide(Entity entity, World& world){
     {
         action.type = bestPlan->action;
     }
+    action.type = plan.action;
+    action.TargetEntity = plan.TargetEntity;
+    action.TargetPosition = plan.TargetPosition;
 
+    actionComponent.Add(entity, action);
     // actionComponent.Add(entity, action);
 }
 

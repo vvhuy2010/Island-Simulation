@@ -191,5 +191,7 @@ CMakeFiles/IslandSimulation.dir/src/ActionSystem.cpp.obj: \
  C:/Users/HuyPC/island_simulation/include/PlannerComponent.h \
  C:/Users/HuyPC/island_simulation/include/Planner.h \
  C:/Users/HuyPC/island_simulation/include/Plan.h \
+ C:/Users/HuyPC/island_simulation/include/MemoryComponent.h \
+ C:/Users/HuyPC/island_simulation/include/Memory.h \
  C:/Users/HuyPC/island_simulation/include/NeedSystem.h \
  C:/Users/HuyPC/island_simulation/include/InventorySystem.h

@@ -248,6 +248,30 @@ src/InventorySystem.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\IslandSimulation.dir\build.make CMakeFiles/IslandSimulation.dir/src/InventorySystem.cpp.s
 .PHONY : src/InventorySystem.cpp.s
 
+src/MemorySystem.obj: src/MemorySystem.cpp.obj
+.PHONY : src/MemorySystem.obj
+
+# target to build an object file
+src/MemorySystem.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\IslandSimulation.dir\build.make CMakeFiles/IslandSimulation.dir/src/MemorySystem.cpp.obj
+.PHONY : src/MemorySystem.cpp.obj
+
+src/MemorySystem.i: src/MemorySystem.cpp.i
+.PHONY : src/MemorySystem.i
+
+# target to preprocess a source file
+src/MemorySystem.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\IslandSimulation.dir\build.make CMakeFiles/IslandSimulation.dir/src/MemorySystem.cpp.i
+.PHONY : src/MemorySystem.cpp.i
+
+src/MemorySystem.s: src/MemorySystem.cpp.s
+.PHONY : src/MemorySystem.s
+
+# target to generate assembly for a file
+src/MemorySystem.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\IslandSimulation.dir\build.make CMakeFiles/IslandSimulation.dir/src/MemorySystem.cpp.s
+.PHONY : src/MemorySystem.cpp.s
+
 src/MovementSystem.obj: src/MovementSystem.cpp.obj
 .PHONY : src/MovementSystem.obj
 
@@ -464,6 +488,9 @@ help:
 	@echo ... src/InventorySystem.obj
 	@echo ... src/InventorySystem.i
 	@echo ... src/InventorySystem.s
+	@echo ... src/MemorySystem.obj
+	@echo ... src/MemorySystem.i
+	@echo ... src/MemorySystem.s
 	@echo ... src/MovementSystem.obj
 	@echo ... src/MovementSystem.i
 	@echo ... src/MovementSystem.s

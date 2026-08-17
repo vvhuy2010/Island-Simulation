@@ -1,7 +1,13 @@
 #include "World.h"
-#include "EntityManager.h"
-#include "AgentComponent.h"
+#include "NeedSystem.h"
 #include "ObservationSystem.h"
+#include "PlannerSystem.h"
+#include "DecisionSystem.h"
+#include "MovementSystem.h"
+#include "MemoryComponent.h"
+#include "ActionSystem.h"
+#include "MemorySystem.h"
+
 #include <random>
 
 uint64_t World::GetCurrentTick() const
@@ -64,17 +70,26 @@ void World::DestroyEntity(Entity entity){
 }
 
 void World::Update(){
-    healthSystem.Update(*this);
+
+    NeedSystem needSystem;
+    ObservationSystem observationSystem;
+    PlannerSystem plannerSystem;
+    DecisionSystem decisionSystem;
+    ActionSystem actionSystem;
+    MemorySystem memorySystem;
+
+    needSystem.Update(*this);
+    observationSystem.Update(*this);
+    memorySystem.Update(*this);
+    plannerSystem.Update(*this);
+    decisionSystem.Update(*this);
+    actionSystem.Update(*this);
 
     movementSystem.Update(*this);
-
-    ObservationSystem observationSystem;
-
-    observationSystem.Update(*this);
+    healthSystem.Update(*this);
 
     currentTick++;
 }
-
 PositionComponent& World::GetPositionComponent(){
     return positionComponent;
 }
@@ -110,6 +125,9 @@ PlannerComponent& World::GetPlannerComponent(){
 InventoryComponent& World::GetInventoryComponent(){
     return inventoryComponent;
 }
+MemoryComponent& World::GetMemoryComponent(){
+    return memoryComponent;
+}
 Entity World::SpawnHuman(const std::string& name, Position position)
 {
     Entity entity = CreateEntity();
@@ -127,6 +145,10 @@ Entity World::SpawnHuman(const std::string& name, Position position)
     plannerComponent.Add(entity, Planner{});
 
     actionComponent.Add(entity, Action{});
+
+    memoryComponent.Add(entity, std::vector<Memory>{});
+
+    plannerComponent.Add(entity, Planner{});
 
     observationComponent.Add(entity, Observation{});
 

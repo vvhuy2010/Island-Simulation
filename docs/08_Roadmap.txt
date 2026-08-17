@@ -48,13 +48,7 @@ Completed
 [x] Architecture
 
 Mục tiêu:
-
-Khóa toàn bộ kiến trúc V1
-để hạn chế refactor trong tương lai.
-
------------------------------------------------------------
 Phase 1 — Living Agent (V1)
------------------------------------------------------------
 
 Objective
 
@@ -62,19 +56,23 @@ Tạo ra một Agent
 có thể tự sinh tồn
 trong một thế giới đơn giản.
 
+--------------------------------------------------
 Core Engine
+--------------------------------------------------
 
-[ ] ECS Framework
+[x] ECS Framework
 
-[ ] Simulation Tick
+[x] Simulation Tick
 
 [ ] Event System
 
 [ ] Serialization
 
+--------------------------------------------------
 World
+--------------------------------------------------
 
-[ ] Time
+[x] Time
 
 [ ] Resources
 
@@ -82,7 +80,9 @@ World
 
 [ ] Basic Physics
 
+--------------------------------------------------
 Agent
+--------------------------------------------------
 
 [ ] Observation
 
@@ -90,15 +90,21 @@ Agent
 
 [ ] Personality
 
-[ ] Planner
+[x] Planner
 
 [ ] Mind Simulation
 
-[ ] Action
+[x] Action
 
-[ ] Communication
+[x] Needs
 
+[x] Inventory
+
+[x] Decision
+
+--------------------------------------------------
 Relationship
+--------------------------------------------------
 
 [ ] Trust
 
@@ -106,7 +112,9 @@ Relationship
 
 [ ] Respect
 
+--------------------------------------------------
 Developer Tools
+--------------------------------------------------
 
 [ ] Replay
 
@@ -114,25 +122,11 @@ Developer Tools
 
 [ ] Debug Overlay
 
+--------------------------------------------------
 Dungeon Master
+--------------------------------------------------
 
 [ ] Rule-based Opportunity Injection
-
-Definition of Success
-
-- Agent có thể sống nhiều ngày.
-
-- Có thể tự tìm thức ăn.
-
-- Có thể tự thay đổi kế hoạch.
-
-- Có thể ghi nhớ.
-
-- Có thể giao tiếp.
-
-- Có thể tạo ra những hành vi
-  không được viết sẵn.
-
 -----------------------------------------------------------
 Phase 2 — Living Society (V2)
 -----------------------------------------------------------

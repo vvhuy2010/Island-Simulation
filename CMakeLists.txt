@@ -21,4 +21,5 @@ add_executable(
     src/InventorySystem.cpp
     src/PlannerSystem.cpp
     src/DecisionSystem.cpp
+    src/MemorySystem.cpp
 )

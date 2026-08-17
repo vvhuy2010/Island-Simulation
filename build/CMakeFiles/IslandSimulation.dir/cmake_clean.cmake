@@ -9,6 +9,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/IslandSimulation.dir/src/HealthSystem.cpp.obj.d"
   "CMakeFiles/IslandSimulation.dir/src/InventorySystem.cpp.obj"
   "CMakeFiles/IslandSimulation.dir/src/InventorySystem.cpp.obj.d"
+  "CMakeFiles/IslandSimulation.dir/src/MemorySystem.cpp.obj"
+  "CMakeFiles/IslandSimulation.dir/src/MemorySystem.cpp.obj.d"
   "CMakeFiles/IslandSimulation.dir/src/MovementSystem.cpp.obj"
   "CMakeFiles/IslandSimulation.dir/src/MovementSystem.cpp.obj.d"
   "CMakeFiles/IslandSimulation.dir/src/NeedSystem.cpp.obj"

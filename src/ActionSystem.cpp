@@ -5,6 +5,7 @@
 
 void ActionSystem::ExecuteAction(Entity entity, World& world){
     ActionComponent& actionComponent = world.GetActionComponent();
+    ResourceComponent& resourceComponent = world.GetResourceComponent();
     
     NeedComponent& needComponent = world.GetNeedComponent();
     Need& need = needComponent.Get(entity);
@@ -36,25 +37,37 @@ void ActionSystem::ExecuteAction(Entity entity, World& world){
             break;
 
         case ActionType::Eat:
-            // TODO
-            if (inventorySystem.HasItem(ItemType::Berry, inventory)){
-                // FinishAction(entity, world);
-                if (action.RemainingTicks > 0){
-                    action.RemainingTicks--;
-                }
+        {
+            ResourceComponent& resourceComponent = world.GetResourceComponent();
 
-                if (action.RemainingTicks == 0){
-                    FinishAction(entity, world);
-                    inventorySystem.RemoveItem(ItemType::Berry, 1, inventory);
-                    need.Hunger -= 10;
-                    needSystem.Clamp(need);
-                    break;
-                }
-                break;
-            }else{
+            if (action.TargetEntity == INVALID_ENTITY){
                 FinishAction(entity, world);
                 break;
             }
+
+            if (!resourceComponent.Has(action.TargetEntity)){
+                FinishAction(entity, world);
+                break;
+            }
+
+            Resource& resource = resourceComponent.Get(action.TargetEntity);
+
+            if (resource.type != ResourceType::Berry){
+                FinishAction(entity, world);
+                break;
+            }
+
+            inventorySystem.AddItem(ItemType::Berry, 1, inventory);
+
+            resourceComponent.Remove(action.TargetEntity);
+
+            need.Hunger -= 10;
+            needSystem.Clamp(need);
+
+            FinishAction(entity, world);
+
+            break;
+        }
 
         case ActionType::Move:
             // TODO
@@ -68,25 +81,38 @@ void ActionSystem::ExecuteAction(Entity entity, World& world){
             break;
 
         case ActionType::Drink:
-            // TODO
-            if (inventorySystem.HasItem(ItemType::Water, inventory)){
-                // FinishAction(entity, world);
-                if (action.RemainingTicks > 0){
-                    action.RemainingTicks--;
-                }
+        {
+            ResourceComponent& resourceComponent = world.GetResourceComponent();
 
-                if (action.RemainingTicks == 0){
-                    FinishAction(entity, world);
-                    inventorySystem.RemoveItem(ItemType::Water, 1, inventory);
-                    need.Thirst -= 10;
-                    needSystem.Clamp(need);     
-                    break;
-                }
-                break;
-            }else{
+            if (action.TargetEntity == INVALID_ENTITY){
                 FinishAction(entity, world);
                 break;
             }
+
+            if (!resourceComponent.Has(action.TargetEntity)){
+                FinishAction(entity, world);
+                break;
+            }
+
+            Resource& resource = resourceComponent.Get(action.TargetEntity);
+
+            if (resource.type != ResourceType::Water){
+                FinishAction(entity, world);
+                break;
+            }
+
+            inventorySystem.AddItem(ItemType::Water, 1, inventory);
+
+            resourceComponent.Remove(action.TargetEntity);
+
+            need.Thirst -= 10;
+            needSystem.Clamp(need);
+
+            FinishAction(entity, world);
+
+            break;
+        }
+
 
     }
 }

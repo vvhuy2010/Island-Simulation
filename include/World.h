@@ -20,6 +20,7 @@
 #include "InventoryComponent.h"
 #include "ActionComponent.h"
 #include "PlannerComponent.h"
+#include "MemoryComponent.h"
 
 class World{
 
@@ -40,6 +41,7 @@ public:
     ActionComponent& GetActionComponent();
     InventoryComponent& GetInventoryComponent();
     PlannerComponent& GetPlannerComponent();
+    MemoryComponent& GetMemoryComponent();
 
     // uint64_t GetCurrentTick() const;
     uint64_t GetCurrentTick() const;
@@ -63,35 +65,19 @@ private:
     EntityManager entityManager;
 
     PositionComponent positionComponent;
-
-    // PositionComponent& position();
-
     HealthComponent healthComponent;
+    VelocityComponent velocityComponent;
+    ResourceComponent resourceComponent;
+    AgentComponent agentComponent;
+    ObservationComponent observationComponent;
+    InventoryComponent inventoryComponent;
+    NeedComponent needComponent;
+    ActionComponent actionComponent;
+    PlannerComponent plannerComponent;
+    MemoryComponent memoryComponent;
 
     MovementSystem movementSystem;
-
     HealthSystem healthSystem;
 
-    VelocityComponent velocityComponent;
-
-    // VelocityComponent& velocity();
-
-    ResourceComponent resourceComponent;
-
-    AgentComponent agentComponent;
-
-    // ResourceComponent& resource();
-
-    ObservationComponent observationComponent;
-
-    InventoryComponent inventoryComponent;
-
-    NeedComponent needComponent;
-
-    ActionComponent actionComponent;
-
-    PlannerComponent plannerComponent;
-
     uint64_t currentTick = 0;
-    // int GetCurrentTick();
 };

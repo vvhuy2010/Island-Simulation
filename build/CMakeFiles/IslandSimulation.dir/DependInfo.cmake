@@ -13,6 +13,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "C:/Users/HuyPC/island_simulation/src/EntityManager.cpp" "CMakeFiles/IslandSimulation.dir/src/EntityManager.cpp.obj" "gcc" "CMakeFiles/IslandSimulation.dir/src/EntityManager.cpp.obj.d"
   "C:/Users/HuyPC/island_simulation/src/HealthSystem.cpp" "CMakeFiles/IslandSimulation.dir/src/HealthSystem.cpp.obj" "gcc" "CMakeFiles/IslandSimulation.dir/src/HealthSystem.cpp.obj.d"
   "C:/Users/HuyPC/island_simulation/src/InventorySystem.cpp" "CMakeFiles/IslandSimulation.dir/src/InventorySystem.cpp.obj" "gcc" "CMakeFiles/IslandSimulation.dir/src/InventorySystem.cpp.obj.d"
+  "C:/Users/HuyPC/island_simulation/src/MemorySystem.cpp" "CMakeFiles/IslandSimulation.dir/src/MemorySystem.cpp.obj" "gcc" "CMakeFiles/IslandSimulation.dir/src/MemorySystem.cpp.obj.d"
   "C:/Users/HuyPC/island_simulation/src/MovementSystem.cpp" "CMakeFiles/IslandSimulation.dir/src/MovementSystem.cpp.obj" "gcc" "CMakeFiles/IslandSimulation.dir/src/MovementSystem.cpp.obj.d"
   "C:/Users/HuyPC/island_simulation/src/NeedSystem.cpp" "CMakeFiles/IslandSimulation.dir/src/NeedSystem.cpp.obj" "gcc" "CMakeFiles/IslandSimulation.dir/src/NeedSystem.cpp.obj.d"
   "C:/Users/HuyPC/island_simulation/src/Observation.cpp" "CMakeFiles/IslandSimulation.dir/src/Observation.cpp.obj" "gcc" "CMakeFiles/IslandSimulation.dir/src/Observation.cpp.obj.d"

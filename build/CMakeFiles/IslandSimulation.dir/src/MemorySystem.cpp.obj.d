@@ -1,7 +1,6 @@
-CMakeFiles/IslandSimulation.dir/src/main.cpp.obj: \
- C:\Users\HuyPC\island_simulation\src\main.cpp \
- C:/Users/HuyPC/island_simulation/include/World.h \
- C:/Users/HuyPC/island_simulation/include/EntityManager.h \
+CMakeFiles/IslandSimulation.dir/src/MemorySystem.cpp.obj: \
+ C:\Users\HuyPC\island_simulation\src\MemorySystem.cpp \
+ C:/Users/HuyPC/island_simulation/include/MemorySystem.h \
  C:/Users/HuyPC/island_simulation/include/Entity.h \
  C:/msys64/mingw64/include/c++/15.2.0/limits \
  C:/msys64/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/c++config.h \
@@ -20,6 +19,8 @@ CMakeFiles/IslandSimulation.dir/src/main.cpp.obj: \
  C:/msys64/mingw64/include/stddef.h \
  C:/msys64/mingw64/include/c++/15.2.0/cstddef \
  C:/msys64/mingw64/include/c++/15.2.0/bits/version.h \
+ C:/Users/HuyPC/island_simulation/include/World.h \
+ C:/Users/HuyPC/island_simulation/include/EntityManager.h \
  C:/msys64/mingw64/include/c++/15.2.0/vector \
  C:/msys64/mingw64/include/c++/15.2.0/bits/requires_hosted.h \
  C:/msys64/mingw64/include/c++/15.2.0/bits/stl_algobase.h \
@@ -191,5 +192,4 @@ CMakeFiles/IslandSimulation.dir/src/main.cpp.obj: \
  C:/Users/HuyPC/island_simulation/include/Planner.h \
  C:/Users/HuyPC/island_simulation/include/Plan.h \
  C:/Users/HuyPC/island_simulation/include/MemoryComponent.h \
- C:/Users/HuyPC/island_simulation/include/Memory.h \
- C:/Users/HuyPC/island_simulation/include/Simulation.h
+ C:/Users/HuyPC/island_simulation/include/Memory.h

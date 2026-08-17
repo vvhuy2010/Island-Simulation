@@ -190,7 +190,14 @@ CMakeFiles/IslandSimulation.dir/src/World.cpp.obj: \
  C:/Users/HuyPC/island_simulation/include/PlannerComponent.h \
  C:/Users/HuyPC/island_simulation/include/Planner.h \
  C:/Users/HuyPC/island_simulation/include/Plan.h \
+ C:/Users/HuyPC/island_simulation/include/MemoryComponent.h \
+ C:/Users/HuyPC/island_simulation/include/Memory.h \
+ C:/Users/HuyPC/island_simulation/include/NeedSystem.h \
  C:/Users/HuyPC/island_simulation/include/ObservationSystem.h \
+ C:/Users/HuyPC/island_simulation/include/PlannerSystem.h \
+ C:/Users/HuyPC/island_simulation/include/DecisionSystem.h \
+ C:/Users/HuyPC/island_simulation/include/ActionSystem.h \
+ C:/Users/HuyPC/island_simulation/include/MemorySystem.h \
  C:/msys64/mingw64/include/c++/15.2.0/random \
  C:/msys64/mingw64/include/c++/15.2.0/cmath \
  C:/msys64/mingw64/include/math.h \
